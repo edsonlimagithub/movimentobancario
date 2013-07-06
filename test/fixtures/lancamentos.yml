@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  confirmado: false
+  data: 2013-07-06
+  evento: 1
+  debito: false
+  valor: 1.5
+
+two:
+  confirmado: false
+  data: 2013-07-06
+  evento: 1
+  debito: false
+  valor: 1.5

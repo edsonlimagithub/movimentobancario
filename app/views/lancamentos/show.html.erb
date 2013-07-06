@@ -1,0 +1,30 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Confirmado:</b>
+  <%= @lancamento.confirmado %>
+</p>
+
+<p>
+  <b>Data:</b>
+  <%= @lancamento.data %>
+</p>
+
+<p>
+  <b>Evento:</b>
+  <%= @lancamento.evento %>
+</p>
+
+<p>
+  <b>Debito:</b>
+  <%= @lancamento.debito %>
+</p>
+
+<p>
+  <b>Valor:</b>
+  <%= @lancamento.valor %>
+</p>
+
+
+<%= link_to 'Edit', edit_lancamento_path(@lancamento) %> |
+<%= link_to 'Back', lancamentos_path %>
