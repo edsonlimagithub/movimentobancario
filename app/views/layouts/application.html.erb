@@ -21,21 +21,22 @@
 	<div id="container">
     	<div id="header">
         	<h2>Controle Bancário</h2>
-    <div id="topmenu">
-            	<ul>
-                	<li class="current"><a href="#" class="menu">Dashboard</a></li>
-                    <li><a href="#" class="menu">Lançamentos</a></li>
-                	<li><a href="users.html">Users</a></li>
-                    <li><a href="#">Manage</a></li>
-                    <li><a href="#">CMS</a></li>
-                    <li><a href="#">Statistics</a></li>
-                    <li><a href="#">Settings</a></li>
-              </ul>
-          </div>
+        <div id="topmenu">
+        	<ul id="menu_principal">
+            	<li class="current" submenu="dashboard"><a href="#" onClick="atualiza_menu(this)" class="menu">Dashboard</a></li>
+              <li submenu="lancamentos"><a href="#" class="menu" onClick="atualiza_menu(this)">Lançamentos</a></li>
+            	<li><a href="users.html">Users</a></li>
+              <li><a href="#">Manage</a></li>
+              <li><a href="#">CMS</a></li>
+              <li><a href="#">Statistics</a></li>
+              <li><a href="#">Settings</a></li>
+          </ul>
+        </div>
       </div>
         <div id="top-panel">
             <div id="panel">
-            	<%= render :partial => "layouts/dashboard" %>
+            	<div class="submenu" id="dashboard"><%= render :partial => "layouts/dashboard" %></div>
+              <div class="submenu" id="lancamentos"><%= render :partial => "layouts/lancamentos" %></div>
             </div>
       </div>
         <div id="wrapper">
@@ -44,32 +45,28 @@
             </div>
             <div id="sidebar">
   				<ul>
-                	<li><h3><a href="#" class="house">Dashboard</a></h3>
-                		<%= render :partial => 'layouts/dashboard' %>
-                    </li>
-                    <li><h3><a href="#" class="folder_table">Lançamentos</a></h3>
-          				<ul>
-                        	<li><a href="#" class="addorder">New order</a></li>
-                          <li><a href="#" class="shipping">Shipments</a></li>
-                            <li><a href="#" class="invoices">Invoices</a></li>
-                        </ul>
-                    </li>
-                    <li><h3><a href="#" class="manage">Manage</a></h3>
-          				<ul>
-                            <li><a href="#" class="manage_page">Pages</a></li>
-                            <li><a href="#" class="cart">Products</a></li>
-                            <li><a href="#" class="folder">Product categories</a></li>
-            				<li><a href="#" class="promotions">Promotions</a></li>
-                        </ul>
-                    </li>
-                  <li><h3><a href="#" class="user">Users</a></h3>
-          				<ul>
-                            <li><a href="#" class="useradd">Add user</a></li>
-                            <li><a href="#" class="group">User groups</a></li>
-            				<li><a href="#" class="search">Find user</a></li>
-                            <li><a href="#" class="online">Users online</a></li>
-                        </ul>
-                    </li>
+          	<li><h3><a href="#" class="house">Dashboard</a></h3>
+          		<%= render :partial => 'layouts/dashboard' %>
+              </li>
+              <li><h3><a href="#" class="folder_table">Lançamentos</a></h3>
+              <%= render :partial => 'layouts/lancamentos' %>
+              </li>
+              <li><h3><a href="#" class="manage">Manage</a></h3>
+      				<ul>
+                <li><a href="#" class="manage_page">Pages</a></li>
+                <li><a href="#" class="cart">Products</a></li>
+                <li><a href="#" class="folder">Product categories</a></li>
+  			        <li><a href="#" class="promotions">Promotions</a></li>
+              </ul>
+            </li>
+            <li><h3><a href="#" class="user">Users</a></h3>
+    				<ul>
+                      <li><a href="#" class="useradd">Add user</a></li>
+                      <li><a href="#" class="group">User groups</a></li>
+      				<li><a href="#" class="search">Find user</a></li>
+                      <li><a href="#" class="online">Users online</a></li>
+                  </ul>
+              </li>
 				</ul>       
           </div>
       </div>
@@ -95,10 +92,23 @@
 
 <script type='text/javascript'>
 	$(function(){
-		$(".menu").bind("click", carrega_submenu($(shit).text());	
+    atualiza_submenu("dashboard");
 	});
 
-	var carrega_submenu = function(submenu){
-		$("#panel").html()
-	}
+  //atualizar menu principal
+  var atualiza_menu = function(element){
+    $("#menu_principal > li").attr("class", "");
+    $(element).parent().attr("class", "current");
+    atualiza_submenu($(element).parent().attr("submenu"));
+  }
+
+  //controle de submenus do menu principal
+  var atualiza_submenu = function(menu_name){
+    $(".submenu").hide();
+    $("#menu_principal > li").each(function(){
+      if($(this).attr("class") == "current"){
+        $("#" + $(this).attr("submenu")).show();
+      }
+    })
+  }
 </script>
