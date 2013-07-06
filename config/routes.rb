@@ -1,5 +1,7 @@
 Movimentobancario::Application.routes.draw do
-  root :to => 'pages#index'
+  get "dashboard/index"
+
+  root :to => 'dashboard#index'
 
   get "pages/index"
 
