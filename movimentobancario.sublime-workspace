@@ -4,6 +4,22 @@
 		"selected_items":
 		[
 			[
+				"atualiza",
+				"atualiza_menu"
+			],
+			[
+				"menu_",
+				"menu_principal"
+			],
+			[
+				"menu",
+				"menu_name"
+			],
+			[
+				"atua",
+				"atualiza_submenu"
+			],
+			[
 				"the",
 				"therubyracer"
 			],
@@ -156,18 +172,10 @@
 			}
 		},
 		{
-			"file": "app/views/pages/index.html.erb",
-			"settings":
-			{
-				"buffer_size": 70,
-				"line_ending": "Unix"
-			}
-		},
-		{
 			"file": "app/views/layouts/application.html.erb",
 			"settings":
 			{
-				"buffer_size": 4377,
+				"buffer_size": 4865,
 				"line_ending": "Unix"
 			}
 		},
@@ -178,14 +186,26 @@
 				"buffer_size": 72,
 				"line_ending": "Unix"
 			}
+		},
+		{
+			"file": "app/views/lancamentos/index.html.erb",
+			"settings":
+			{
+				"buffer_size": 1134,
+				"line_ending": "Unix"
+			}
 		}
 	],
 	"build_system": "Packages/Ruby/Ruby.sublime-build",
 	"command_palette":
 	{
-		"height": 392.0,
+		"height": 54.0,
 		"selected_items":
 		[
+			[
+				"renam",
+				"File: Rename"
+			],
 			[
 				"rename",
 				"File: Rename"
@@ -252,11 +272,18 @@
 	},
 	"file_history":
 	[
+		"/home/edsonlima/projetos/movimentobancario/app/views/pages/index.html.erb",
+		"/home/edsonlima/projetos/movimentobancario/app/views/layouts/_dashboard.html.erb",
+		"/home/edsonlima/projetos/movimentobancario/app/views/layouts/_lancamentos.html.erb",
+		"/home/edsonlima/projetos/movimentobancario/app/assets/stylesheets/jquery.dataTables_themeroller.css",
+		"/home/edsonlima/projetos/movimentobancario/app/assets/stylesheets/jquery.dataTables.css",
+		"/home/edsonlima/projetos/movimentobancario/app/assets/stylesheets/theme1.css",
+		"/home/edsonlima/projetos/movimentobancario/app/assets/stylesheets/theme4.css",
+		"/home/edsonlima/projetos/movimentobancario/app/views/layouts/_lancamento.html.erb",
 		"/home/edsonlima/projetos/movimentobancario/config/database.yml",
 		"/home/edsonlima/projetos/movimentobancario/Gemfile",
 		"/home/edsonlima/projetos/movimentobancario/config/routes.rb",
 		"/home/edsonlima/projetos/movimentobancario/app/controllers/pages_controller.rb",
-		"/home/edsonlima/projetos/movimentobancario/app/views/layouts/_dashboard.html.erb",
 		"/home/edsonlima/projetos/movimentobancario/test/functional/dashboard_controller_test.rb",
 		"/home/edsonlima/projetos/movimentobancario/app/assets/stylesheets/style.css",
 		"/home/edsonlima/projetos/movimentobancario/app/assets/stylesheets/theme.css",
@@ -271,7 +298,6 @@
 		"/home/edsonlima/projetos/movimentobancario/app/views/devise/passwords/new.html.erb",
 		"/home/edsonlima/projetos/movimentobancario/config/locales/en.yml",
 		"/home/edsonlima/projetos/movimentobancario/config/initializers/devise.rb",
-		"/home/edsonlima/projetos/movimentobancario/app/views/pages/index.html.erb",
 		"/home/edsonlima/projetos/movimentobancario/public/index_old.html",
 		"/home/edsonlima/projetos/movimentobancario/config/application.rb",
 		"/home/edsonlima/projetos/movimentobancario/public/index.html",
@@ -391,6 +417,9 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"theme=5",
+			"theme5",
+			"them",
 			"panel",
 			"content",
 			"sales",
@@ -438,7 +467,7 @@
 	"groups":
 	[
 		{
-			"selected": 2,
+			"selected": 1,
 			"sheets":
 			[
 				{
@@ -469,58 +498,34 @@
 				},
 				{
 					"buffer": 1,
-					"file": "app/views/pages/index.html.erb",
+					"file": "app/views/layouts/application.html.erb",
 					"settings":
 					{
-						"buffer_size": 70,
+						"buffer_size": 4865,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								69,
-								69
+								519,
+								519
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/Rails/HTML (Rails).tmLanguage"
+							"syntax": "Packages/Rails/HTML (Rails).tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 102.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
 				},
 				{
 					"buffer": 2,
-					"file": "app/views/layouts/application.html.erb",
-					"settings":
-					{
-						"buffer_size": 4377,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								877,
-								877
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Rails/HTML (Rails).tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 306.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 3,
 					"file": "app/controllers/dashboard_controller.rb",
 					"settings":
 					{
@@ -541,6 +546,34 @@
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "app/views/lancamentos/index.html.erb",
+					"settings":
+					{
+						"buffer_size": 1134,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								967,
+								967
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Rails/HTML (Rails).tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 357.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -594,6 +627,26 @@
 		"selected_items":
 		[
 			[
+				"theme4",
+				"app/assets/stylesheets/theme4.css"
+			],
+			[
+				"them",
+				"app/assets/stylesheets/theme1.css"
+			],
+			[
+				"jquery",
+				"app/assets/stylesheets/jquery.dataTables.css"
+			],
+			[
+				"index",
+				"app/views/lancamentos/index.html.erb"
+			],
+			[
+				"_",
+				"app/views/layouts/_dashboard.html.erb"
+			],
+			[
 				"dashboar",
 				"app/controllers/dashboard_controller.rb"
 			],
@@ -620,10 +673,6 @@
 			[
 				"roues",
 				"config/routes.rb"
-			],
-			[
-				"index",
-				"app/views/pages/index.html.erb"
 			],
 			[
 				"gem",

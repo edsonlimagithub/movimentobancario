@@ -1,33 +1,43 @@
 <h1>Lançamentos</h1>
 
-<table>
-  <tr>
-    <th>Confirmado</th>
-    <th>Data</th>
-    <th>Evento</th>
-    <th>Debito</th>
-    <th>Valor</th>
-    <th>Saldo</th>
-    <th></th>
-    <th></th>
-    <th></th>
-  </tr>
-
-<% @lancamentos.each do |lancamento| %>
-  <tr>
-    <td><%= lancamento.confirmado %></td>
-    <td><%= lancamento.data %></td>
-    <td><%= lancamento.evento %></td>
-    <td><%= lancamento.debito %></td>
-    <td><%= lancamento.valor %></td>
-    <td><%= 'saldo' %></td>
-    <td><%= link_to 'Show', lancamento %></td>
-    <td><%= link_to 'Edit', edit_lancamento_path(lancamento) %></td>
-    <td><%= link_to 'Destroy', lancamento, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-  </tr>
-<% end %>
+<table id="tabela">
+    <thead>
+      <tr>
+        <th>Confirmado</th>
+        <th>Data</th>
+        <th>Evento</th>
+        <th>Debito</th>
+        <th>Valor</th>
+        <th>Saldo</th>
+        <th></th>
+        <th></th>
+        <th></th>
+      </tr>
+    </thead>
+    <tbody>
+        <% @lancamentos.each do |lancamento| %>
+          <tr>
+            <td><%= lancamento.confirmado %></td>
+            <td><%= lancamento.data %></td>
+            <td><%= lancamento.evento %></td>
+            <td><%= lancamento.debito %></td>
+            <td><%= lancamento.valor %></td>
+            <td><%= 'saldo' %></td>
+            <td><%= link_to 'Show', lancamento %></td>
+            <td><%= link_to 'Edit', edit_lancamento_path(lancamento) %></td>
+            <td><%= link_to 'Destroy', lancamento, method: :delete, data: { confirm: 'Deseja realmente excluir?' } %></td>
+          </tr>
+        <% end %>
+    </tbody>
 </table>
 
 <br />
 
-<%= link_to 'New Lancamento', new_lancamento_path %>
+<%= link_to 'Novo Lancamento', new_lancamento_path %>
+
+<script type="text/javascript">
+    $(document).ready(function(){
+        $("#tabela").dataTable({});    
+    });
+    
+</script>

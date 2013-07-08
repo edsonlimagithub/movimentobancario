@@ -5,8 +5,11 @@
 <title>Dashboard - Admin Template</title>
 <%= stylesheet_link_tag "theme",  :media => "screen" %>
 <%= stylesheet_link_tag "style",  :media => "screen" %>
+<%= stylesheet_link_tag "jquery.dataTables",  :media => "screen" %>
+<%= stylesheet_link_tag "jquery.dataTables_themeroller",  :media => "screen" %>
 
 <%= javascript_include_tag "jquery_1_10_2_min" %>
+<%= javascript_include_tag "jquery.dataTables.min" %>
 
 <script>
    var StyleFile = "theme" + document.cookie.charAt(6) + ".css";
@@ -81,7 +84,7 @@
                 <li><a href="javascript: document.cookie='theme=2'; window.location.reload();" title="Green" id="greenswitch">g</a></li>
                 <li><a href="javascript: document.cookie='theme=3'; window.location.reload();" title="Brown" id="brownswitch">b</a></li>
                 <li><a href="javascript: document.cookie='theme=4'; window.location.reload();" title="Mix" id="mixswitch">m</a></li>
-                <li><a href="javascript: document.cookie='theme=5'; window.location.reload();" title="Mix" id="defswitch">m</a></li>
+               <!--  <li><a href="javascript: document.cookie='theme=5'; window.location.reload();" title="Mix" id="defswitch">m</a></li> -->
             </ul>
         </div><br />
 
