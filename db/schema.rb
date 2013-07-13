@@ -11,7 +11,30 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130706203700) do
+ActiveRecord::Schema.define(:version => 20130713201730) do
+
+  create_table "contas", :force => true do |t|
+    t.string   "descricao"
+    t.float    "limite"
+    t.boolean  "inativo"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
+  end
+
+  create_table "eventos", :force => true do |t|
+    t.string   "descricao"
+    t.boolean  "debido"
+    t.integer  "prazo_id"
+    t.integer  "grupo_evento_id"
+    t.datetime "created_at",      :null => false
+    t.datetime "updated_at",      :null => false
+  end
+
+  create_table "grupo_eventos", :force => true do |t|
+    t.string   "descricao"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
+  end
 
   create_table "lancamentos", :force => true do |t|
     t.boolean  "confirmado"
@@ -19,6 +42,14 @@ ActiveRecord::Schema.define(:version => 20130706203700) do
     t.integer  "evento"
     t.boolean  "debito"
     t.float    "valor"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
+    t.integer  "conta_id"
+  end
+
+  create_table "prazos", :force => true do |t|
+    t.string   "descricao"
+    t.string   "funcao"
     t.datetime "created_at", :null => false
     t.datetime "updated_at", :null => false
   end

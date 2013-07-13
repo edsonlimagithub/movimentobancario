@@ -21,14 +21,14 @@
 </head>
 
 <body>
-	<div id="container">
-    	<div id="header">
-        	<h2>Controle Bancário</h2>
+  <div id="container">
+      <div id="header">
+          <h2>Controle Bancário</h2>
         <div id="topmenu">
-        	<ul id="menu_principal">
-            	<li class="current" submenu="dashboard"><a href="#" onClick="atualiza_menu(this)" class="menu">Dashboard</a></li>
+          <ul id="menu_principal">
+              <li class="current" submenu="dashboard"><a href="#" onClick="atualiza_menu(this)" class="menu">Dashboard</a></li>
               <li submenu="lancamentos"><a href="#" class="menu" onClick="atualiza_menu(this)">Lançamentos</a></li>
-            	<li><a href="users.html">Users</a></li>
+              <li submenu="cadastros"><a href="#" class="menu" onClick="atualiza_menu(this)">Cadastros</a></li>
               <li><a href="#">Manage</a></li>
               <li><a href="#">CMS</a></li>
               <li><a href="#">Statistics</a></li>
@@ -38,44 +38,48 @@
       </div>
         <div id="top-panel">
             <div id="panel">
-            	<div class="submenu" id="dashboard"><%= render :partial => "layouts/dashboard" %></div>
+              <div class="submenu" id="dashboard"><%= render :partial => "layouts/dashboard" %></div>
               <div class="submenu" id="lancamentos"><%= render :partial => "layouts/lancamentos" %></div>
+              <div class="submenu" id="cadastros"><%= render :partial => "layouts/cadastros" %></div>
             </div>
       </div>
         <div id="wrapper">
             <div id="content">
-       			<%= yield %>
+            <%= yield %>
             </div>
             <div id="sidebar">
-  				<ul>
-          	<li><h3><a href="#" class="house">Dashboard</a></h3>
-          		<%= render :partial => 'layouts/dashboard' %>
+          <ul>
+            <li><h3><a href="#" class="house">Dashboard</a></h3>
+              <%= render :partial => 'layouts/dashboard' %>
               </li>
               <li><h3><a href="#" class="folder_table">Lançamentos</a></h3>
               <%= render :partial => 'layouts/lancamentos' %>
               </li>
+              <li><h3><a href="#" class="folder_table">Cadastros</a></h3>
+              <%= render :partial => 'layouts/cadastros' %>
+              </li>
               <li><h3><a href="#" class="manage">Manage</a></h3>
-      				<ul>
+              <ul>
                 <li><a href="#" class="manage_page">Pages</a></li>
                 <li><a href="#" class="cart">Products</a></li>
                 <li><a href="#" class="folder">Product categories</a></li>
-  			        <li><a href="#" class="promotions">Promotions</a></li>
+                <li><a href="#" class="promotions">Promotions</a></li>
               </ul>
             </li>
             <li><h3><a href="#" class="user">Users</a></h3>
-    				<ul>
+            <ul>
                       <li><a href="#" class="useradd">Add user</a></li>
                       <li><a href="#" class="group">User groups</a></li>
-      				<li><a href="#" class="search">Find user</a></li>
+              <li><a href="#" class="search">Find user</a></li>
                       <li><a href="#" class="online">Users online</a></li>
                   </ul>
               </li>
-				</ul>       
+        </ul>       
           </div>
       </div>
         <div id="footer">
         <div>
-   		 Edson Lima - Programador - (85)87408916 - edson-lima@outlook.com
+       Edson Lima - Programador - (85)87408916 - edson-lima@outlook.com
         </div>
         <div id="styleswitcher">
             <ul>
@@ -94,9 +98,9 @@
 </html>
 
 <script type='text/javascript'>
-	$(function(){
+  $(function(){
     atualiza_submenu("dashboard");
-	});
+  });
 
   //atualizar menu principal
   var atualiza_menu = function(element){
@@ -112,6 +116,6 @@
       if($(this).attr("class") == "current"){
         $("#" + $(this).attr("submenu")).show();
       }
-    })
+    });
   }
 </script>

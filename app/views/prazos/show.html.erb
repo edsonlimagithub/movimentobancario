@@ -1,0 +1,15 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Descricao:</b>
+  <%= @prazo.descricao %>
+</p>
+
+<p>
+  <b>Funcao:</b>
+  <%= @prazo.funcao %>
+</p>
+
+
+<%= link_to 'Edit', edit_prazo_path(@prazo) %> |
+<%= link_to 'Back', prazos_path %>

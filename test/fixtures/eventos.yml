@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  descricao: MyString
+  debido: false
+  prazo_id: 1
+  grupo_evento_id: 1
+
+two:
+  descricao: MyString
+  debido: false
+  prazo_id: 1
+  grupo_evento_id: 1

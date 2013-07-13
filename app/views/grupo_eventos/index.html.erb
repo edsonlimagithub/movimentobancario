@@ -1,0 +1,23 @@
+<h1>Listing grupo_eventos</h1>
+
+<table>
+  <tr>
+    <th>Descricao</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @grupo_eventos.each do |grupo_evento| %>
+  <tr>
+    <td><%= grupo_evento.descricao %></td>
+    <td><%= link_to 'Show', grupo_evento %></td>
+    <td><%= link_to 'Edit', edit_grupo_evento_path(grupo_evento) %></td>
+    <td><%= link_to 'Destroy', grupo_evento, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Grupo evento', new_grupo_evento_path %>

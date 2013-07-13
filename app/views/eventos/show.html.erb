@@ -1,0 +1,25 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Descricao:</b>
+  <%= @evento.descricao %>
+</p>
+
+<p>
+  <b>Debido:</b>
+  <%= @evento.debido %>
+</p>
+
+<p>
+  <b>Prazo:</b>
+  <%= @evento.prazo_id %>
+</p>
+
+<p>
+  <b>Grupo evento:</b>
+  <%= @evento.grupo_evento_id %>
+</p>
+
+
+<%= link_to 'Edit', edit_evento_path(@evento) %> |
+<%= link_to 'Back', eventos_path %>
