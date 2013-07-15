@@ -16,5 +16,9 @@ Movimentobancario::Application.routes.draw do
   get "pages/index"
 
   devise_for :users
+
+  match "/importacao/sitef" => "importacao#sitef"
+
+  match "/importacao/sitefSave" => "importacao#sitefSave"
   
 end

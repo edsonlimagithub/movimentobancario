@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130713201730) do
+ActiveRecord::Schema.define(:version => 20130715224800) do
 
   create_table "contas", :force => true do |t|
     t.string   "descricao"
@@ -52,6 +52,15 @@ ActiveRecord::Schema.define(:version => 20130713201730) do
     t.string   "funcao"
     t.datetime "created_at", :null => false
     t.datetime "updated_at", :null => false
+  end
+
+  create_table "sitef_files", :force => true do |t|
+    t.datetime "created_at",           :null => false
+    t.datetime "updated_at",           :null => false
+    t.string   "arquivo_file_name"
+    t.string   "arquivo_content_type"
+    t.integer  "arquivo_file_size"
+    t.datetime "arquivo_updated_at"
   end
 
   create_table "users", :force => true do |t|

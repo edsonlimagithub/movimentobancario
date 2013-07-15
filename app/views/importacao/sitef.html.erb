@@ -1,0 +1,5 @@
+<%= form_for @sitefFile, :url => '/importacao/sitefSave', :html => { :multipart => true } do |f| %>
+  <%= f.file_field :arquivo %>
+  <%= f.button 'submit'%>
+<% end %>
+

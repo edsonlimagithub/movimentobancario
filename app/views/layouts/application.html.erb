@@ -29,7 +29,7 @@
               <li class="current" submenu="dashboard"><a href="#" onClick="atualiza_menu(this)" class="menu">Dashboard</a></li>
               <li submenu="lancamentos"><a href="#" class="menu" onClick="atualiza_menu(this)">Lançamentos</a></li>
               <li submenu="cadastros"><a href="#" class="menu" onClick="atualiza_menu(this)">Cadastros</a></li>
-              <li><a href="#">Manage</a></li>
+              <li submenu="importacao"><a href="#" class="menu" onClick="atualiza_menu(this)">Importação</a></li>
               <li><a href="#">CMS</a></li>
               <li><a href="#">Statistics</a></li>
               <li><a href="#">Settings</a></li>
@@ -41,6 +41,7 @@
               <div class="submenu" id="dashboard"><%= render :partial => "layouts/dashboard" %></div>
               <div class="submenu" id="lancamentos"><%= render :partial => "layouts/lancamentos" %></div>
               <div class="submenu" id="cadastros"><%= render :partial => "layouts/cadastros" %></div>
+              <div class="submenu" id="importacao"><%= render :partial => "layouts/importacao" %></div>
             </div>
       </div>
         <div id="wrapper">

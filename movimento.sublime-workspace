@@ -171,6 +171,70 @@
 	},
 	"buffers":
 	[
+		{
+			"file": "config/initializers/inflections.rb",
+			"settings":
+			{
+				"buffer_size": 624,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/views/layouts/application.html.erb",
+			"settings":
+			{
+				"buffer_size": 5217,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/views/layouts/_cadastros.html.erb",
+			"settings":
+			{
+				"buffer_size": 192,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/models/conta.rb",
+			"settings":
+			{
+				"buffer_size": 109,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/models/evento.rb",
+			"settings":
+			{
+				"buffer_size": 176,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/models/lancamento.rb",
+			"settings":
+			{
+				"buffer_size": 201,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/views/eventos/_form.html.erb",
+			"settings":
+			{
+				"buffer_size": 893,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/views/eventos/index.html.erb",
+			"settings":
+			{
+				"buffer_size": 660,
+				"line_ending": "Unix"
+			}
+		}
 	],
 	"build_system": "Packages/Ruby/Ruby.sublime-build",
 	"command_palette":
@@ -248,6 +312,12 @@
 	},
 	"file_history":
 	[
+		"/home/edsonlima/projetos/movimentobancario/app/models/grupo_evento.rb",
+		"/home/edsonlima/projetos/movimentobancario/app/views/eventos/index.html.erb",
+		"/home/edsonlima/projetos/movimentobancario/app/views/eventos/_form.html.erb",
+		"/home/edsonlima/projetos/movimentobancario/db/migrate/20130713194919_add_conta_id_to_lancamentos.rb",
+		"/home/edsonlima/projetos/movimentobancario/app/views/eventos/new.html.erb",
+		"/home/edsonlima/projetos/movimentobancario/db/migrate/20130713194241_add_conta_id_to_evento.rb",
 		"/home/edsonlima/projetos/movimentobancario/app/controllers/lancamentos_controller.rb",
 		"/home/edsonlima/projetos/movimentobancario/doc/README_FOR_APP",
 		"/home/edsonlima/projetos/movimentobancario/app/controllers/application_controller.rb",
@@ -369,13 +439,7 @@
 		"/home/edsonlima/projetos/dsmmanager/app/models/produto_pedido_item.rb",
 		"/home/edsonlima/projetos/dsmmanager/app/models/planilha_pedido.rb",
 		"/home/edsonlima/projetos/dsmmanager/app/controllers/atualizacao_aspixes_controller.rb",
-		"/home/edsonlima/projetos/dsmmanager/app/helpers/pdf_pedidos_helper.rb",
-		"/home/edsonlima/projetos/dsmmanager/app/models/pdf_pedido.rb",
-		"/home/edsonlima/projetos/escola/db/seeds.rb",
-		"/home/edsonlima/projetos/dsmmanager/app/views/ativacaos/new.html.erb",
-		"/home/edsonlima/projetos/dsmmanager/app/controllers/pdf_pedidos_controller.rb",
-		"/home/edsonlima/projetos/dsmmanager/public/planilhas_aspix/ASPIX_ALDEOTA_FEVEREIRO.xls",
-		"/home/edsonlima/projetos/dsmmanager/app/views/pdf_pedidos/exibir_pedido.html.erb"
+		"/home/edsonlima/projetos/dsmmanager/app/helpers/pdf_pedidos_helper.rb"
 	],
 	"find":
 	{
@@ -444,8 +508,223 @@
 	"groups":
 	[
 		{
+			"selected": 7,
 			"sheets":
 			[
+				{
+					"buffer": 0,
+					"file": "config/initializers/inflections.rb",
+					"settings":
+					{
+						"buffer_size": 624,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								584,
+								584
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Ruby/Ruby.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "app/views/layouts/application.html.erb",
+					"settings":
+					{
+						"buffer_size": 5217,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								5217,
+								5217
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 1522.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "app/views/layouts/_cadastros.html.erb",
+					"settings":
+					{
+						"buffer_size": 192,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								177,
+								177
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Rails/HTML (Rails).tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "app/models/conta.rb",
+					"settings":
+					{
+						"buffer_size": 109,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								104,
+								104
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Ruby/Ruby.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "app/models/evento.rb",
+					"settings":
+					{
+						"buffer_size": 176,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								160,
+								160
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Ruby/Ruby.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "app/models/lancamento.rb",
+					"settings":
+					{
+						"buffer_size": 201,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								196,
+								196
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Ruby/Ruby.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"file": "app/views/eventos/_form.html.erb",
+					"settings":
+					{
+						"buffer_size": 893,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								652,
+								652
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Rails/HTML (Rails).tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 7,
+					"file": "app/views/eventos/index.html.erb",
+					"settings":
+					{
+						"buffer_size": 660,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								604,
+								604
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Rails/HTML (Rails).tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				}
 			]
 		}
 	],
@@ -495,8 +774,56 @@
 		"selected_items":
 		[
 			[
+				"eventos/in",
+				"app/views/eventos/index.html.erb"
+			],
+			[
+				"eventos/",
+				"app/views/eventos/_form.html.erb"
+			],
+			[
+				"/evento/inde",
+				"app/views/eventos/index.html.erb"
+			],
+			[
+				"eventos/_",
+				"app/views/eventos/_form.html.erb"
+			],
+			[
+				"eventos/new",
+				"app/views/eventos/new.html.erb"
+			],
+			[
+				"lancam",
+				"app/models/lancamento.rb"
+			],
+			[
+				"evento",
+				"app/models/evento.rb"
+			],
+			[
 				"lanca",
 				"app/controllers/lancamentos_controller.rb"
+			],
+			[
+				"grup",
+				"app/models/grupo_evento.rb"
+			],
+			[
+				"cont",
+				"app/models/conta.rb"
+			],
+			[
+				"_ca",
+				"app/views/layouts/_cadastros.html.erb"
+			],
+			[
+				"app",
+				"app/views/layouts/application.html.erb"
+			],
+			[
+				"inf",
+				"config/initializers/inflections.rb"
 			],
 			[
 				"conta",
@@ -577,10 +904,6 @@
 			[
 				"theme",
 				"app/assets/stylesheets/theme.css"
-			],
-			[
-				"app",
-				"app/views/layouts/application.html.erb"
 			],
 			[
 				"roues",

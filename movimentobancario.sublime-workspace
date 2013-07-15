@@ -4,6 +4,14 @@
 		"selected_items":
 		[
 			[
+				"conta",
+				"conta"
+			],
+			[
+				"Conta",
+				"Conta"
+			],
+			[
 				"atualiza",
 				"atualiza_menu"
 			],
@@ -163,38 +171,6 @@
 	},
 	"buffers":
 	[
-		{
-			"file": "app/controllers/application_controller.rb",
-			"settings":
-			{
-				"buffer_size": 115,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "app/views/layouts/application.html.erb",
-			"settings":
-			{
-				"buffer_size": 4865,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "app/controllers/dashboard_controller.rb",
-			"settings":
-			{
-				"buffer_size": 72,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "app/views/lancamentos/index.html.erb",
-			"settings":
-			{
-				"buffer_size": 1134,
-				"line_ending": "Unix"
-			}
-		}
 	],
 	"build_system": "Packages/Ruby/Ruby.sublime-build",
 	"command_palette":
@@ -272,9 +248,31 @@
 	},
 	"file_history":
 	[
+		"/home/edsonlima/projetos/movimentobancario/app/controllers/lancamentos_controller.rb",
+		"/home/edsonlima/projetos/movimentobancario/doc/README_FOR_APP",
+		"/home/edsonlima/projetos/movimentobancario/app/controllers/application_controller.rb",
+		"/home/edsonlima/projetos/movimentobancario/app/views/layouts/application.html.erb",
+		"/home/edsonlima/projetos/movimentobancario/app/controllers/dashboard_controller.rb",
+		"/home/edsonlima/projetos/movimentobancario/app/views/layouts/_cadastros.html.erb",
+		"/home/edsonlima/projetos/movimentobancario/app/controllers/conta_controller.rb",
+		"/home/edsonlima/projetos/movimentobancario/app/views/conta/_form.html.erb",
+		"/home/edsonlima/projetos/movimentobancario/app/models/conta.rb",
+		"/home/edsonlima/projetos/movimentobancario/app/views/contas/_form.html.erb",
+		"/home/edsonlima/projetos/movimentobancario/config/routes.rb",
+		"/home/edsonlima/projetos/movimentobancario/app/models/lancamento.rb",
+		"/home/edsonlima/projetos/movimentobancario/config/environment.rb",
+		"/home/edsonlima/projetos/movimentobancario/app/controllers/contas_controller.rb",
+		"/home/edsonlima/projetos/movimentobancario/app/views/contas/new.html.erb",
+		"/home/edsonlima/projetos/movimentobancario/app/helpers/contas_helper.rb",
+		"/home/edsonlima/projetos/movimentobancario/app/views/lancamentos/index.html.erb",
+		"/home/edsonlima/projetos/movimentobancario/app/views/layouts/_lancamentos.html.erb",
+		"/home/edsonlima/projetos/movimentobancario/app/helpers/conta_helper.rb",
+		"/home/edsonlima/projetos/movimentobancario/app/models/contum.rb",
+		"/home/edsonlima/projetos/movimentobancario/db/migrate/20130713122321_create_conta.rb",
+		"/home/edsonlima/projetos/movimentobancario/db/migrate/20130706203700_create_lancamentos.rb",
+		"/home/edsonlima/projetos/movimentobancario/db/seeds.rb",
 		"/home/edsonlima/projetos/movimentobancario/app/views/pages/index.html.erb",
 		"/home/edsonlima/projetos/movimentobancario/app/views/layouts/_dashboard.html.erb",
-		"/home/edsonlima/projetos/movimentobancario/app/views/layouts/_lancamentos.html.erb",
 		"/home/edsonlima/projetos/movimentobancario/app/assets/stylesheets/jquery.dataTables_themeroller.css",
 		"/home/edsonlima/projetos/movimentobancario/app/assets/stylesheets/jquery.dataTables.css",
 		"/home/edsonlima/projetos/movimentobancario/app/assets/stylesheets/theme1.css",
@@ -282,15 +280,12 @@
 		"/home/edsonlima/projetos/movimentobancario/app/views/layouts/_lancamento.html.erb",
 		"/home/edsonlima/projetos/movimentobancario/config/database.yml",
 		"/home/edsonlima/projetos/movimentobancario/Gemfile",
-		"/home/edsonlima/projetos/movimentobancario/config/routes.rb",
 		"/home/edsonlima/projetos/movimentobancario/app/controllers/pages_controller.rb",
 		"/home/edsonlima/projetos/movimentobancario/test/functional/dashboard_controller_test.rb",
 		"/home/edsonlima/projetos/movimentobancario/app/assets/stylesheets/style.css",
 		"/home/edsonlima/projetos/movimentobancario/app/assets/stylesheets/theme.css",
 		"/home/edsonlima/projetos/movimentobancario/app/assets/javascripts/jquery_1_10_2_min.js",
-		"/home/edsonlima/projetos/movimentobancario/app/controllers/application_controller.rb",
 		"/home/edsonlima/projetos/movimentobancario/config/environments/development.rb",
-		"/home/edsonlima/projetos/movimentobancario/app/views/layouts/application.html.erb",
 		"/home/edsonlima/projetos/movimentobancario/app/models/user.rb",
 		"/home/edsonlima/projetos/movimentobancario/app/views/devise/sessions/new.html.erb",
 		"/home/edsonlima/projetos/movimentobancario/app/views/devise/registrations/new.html.erb",
@@ -380,26 +375,7 @@
 		"/home/edsonlima/projetos/dsmmanager/app/views/ativacaos/new.html.erb",
 		"/home/edsonlima/projetos/dsmmanager/app/controllers/pdf_pedidos_controller.rb",
 		"/home/edsonlima/projetos/dsmmanager/public/planilhas_aspix/ASPIX_ALDEOTA_FEVEREIRO.xls",
-		"/home/edsonlima/projetos/dsmmanager/app/views/pdf_pedidos/exibir_pedido.html.erb",
-		"/home/edsonlima/projetos/dsmmanager/app/views/perfil_funcionalidades/new.html.erb",
-		"/home/edsonlima/projetos/dsmmanager/public/pedidos/pedido.",
-		"/home/edsonlima/projetos/dsmmanager/app/views/pdf_pedidos/show.html.erb",
-		"/home/edsonlima/projetos/dsmmanager/app/views/layouts/pdf_pedidos.html.erb",
-		"/home/edsonlima/projetos/dsmmanager/app/controllers/analise_auditorias_controller.rb",
-		"/home/edsonlima/projetos/dsmmanager/app/views/analise_auditorias/edit.html.erb",
-		"/home/edsonlima/projetos/dsmmanager/app/views/analise_auditorias/show.html.erb",
-		"/home/edsonlima/.config/sublime-text-2/Packages/SideBarEnhancements/messages/11.13.2012.1305.0.txt",
-		"/home/edsonlima/.config/sublime-text-2/Packages/User/Package Control.sublime-settings",
-		"/home/edsonlima/.config/sublime-text-2/Packages/Package Control/Package Control.sublime-settings",
-		"/home/edsonlima/projetos/dsmmanager/test/functional/funcionalidades_controller_test.rb",
-		"/home/edsonlima/projetos/dsmmanager/config/database.yml",
-		"/home/edsonlima/projetos/dsmmanager/db/migrate/20130221194904_add_attachments_imagem_to_painel.rb",
-		"/home/edsonlima/projetos/dsmmanager/db/seeds.rb",
-		"/home/edsonlima/projetos/dsmmanager/db/migrate/20120926141420_rename_colums.rb",
-		"/home/edsonlima/projetos/dsmmanager/db/migrate/20111208191930_rename_old_consultor_to_funcionario.rb",
-		"/home/edsonlima/projetos/dsmmanager/db/migrate/20111209120312_add_funcao_to_consultor.rb",
-		"/home/edsonlima/projetos/dsmmanager/public/pedidos/pedido.pdf",
-		"/home/edsonlima/projetos/dsmmanager/Capfile"
+		"/home/edsonlima/projetos/dsmmanager/app/views/pdf_pedidos/exibir_pedido.html.erb"
 	],
 	"find":
 	{
@@ -417,6 +393,7 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"current",
 			"theme=5",
 			"theme5",
 			"them",
@@ -467,117 +444,8 @@
 	"groups":
 	[
 		{
-			"selected": 1,
 			"sheets":
 			[
-				{
-					"buffer": 0,
-					"file": "app/controllers/application_controller.rb",
-					"settings":
-					{
-						"buffer_size": 115,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								87,
-								87
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Ruby/Ruby.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 1,
-					"file": "app/views/layouts/application.html.erb",
-					"settings":
-					{
-						"buffer_size": 4865,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								519,
-								519
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Rails/HTML (Rails).tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 102.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 2,
-					"file": "app/controllers/dashboard_controller.rb",
-					"settings":
-					{
-						"buffer_size": 72,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								67,
-								67
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Ruby/Ruby.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 3,
-					"file": "app/views/lancamentos/index.html.erb",
-					"settings":
-					{
-						"buffer_size": 1134,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								967,
-								967
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Rails/HTML (Rails).tmLanguage",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 357.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				}
 			]
 		}
 	],
@@ -627,6 +495,54 @@
 		"selected_items":
 		[
 			[
+				"lanca",
+				"app/controllers/lancamentos_controller.rb"
+			],
+			[
+				"conta",
+				"app/models/conta.rb"
+			],
+			[
+				"/conta/",
+				"app/views/conta/_form.html.erb"
+			],
+			[
+				"_",
+				"app/views/layouts/_cadastros.html.erb"
+			],
+			[
+				"routes",
+				"config/routes.rb"
+			],
+			[
+				"envio",
+				"config/environment.rb"
+			],
+			[
+				"route",
+				"config/routes.rb"
+			],
+			[
+				"lan",
+				"app/controllers/lancamentos_controller.rb"
+			],
+			[
+				"com",
+				"app/models/contum.rb"
+			],
+			[
+				"rout",
+				"config/routes.rb"
+			],
+			[
+				"rou",
+				"config/routes.rb"
+			],
+			[
+				"seed",
+				"db/seeds.rb"
+			],
+			[
 				"theme4",
 				"app/assets/stylesheets/theme4.css"
 			],
@@ -641,10 +557,6 @@
 			[
 				"index",
 				"app/views/lancamentos/index.html.erb"
-			],
-			[
-				"_",
-				"app/views/layouts/_dashboard.html.erb"
 			],
 			[
 				"dashboar",
@@ -687,14 +599,6 @@
 				"config/locales/en.yml"
 			],
 			[
-				"rou",
-				"config/routes.rb"
-			],
-			[
-				"route",
-				"config/routes.rb"
-			],
-			[
 				"devise",
 				"config/initializers/devise.rb"
 			],
@@ -705,10 +609,6 @@
 			[
 				"devel",
 				"config/environments/development.rb"
-			],
-			[
-				"routes",
-				"config/routes.rb"
 			],
 			[
 				"user",
@@ -741,10 +641,6 @@
 			[
 				"ativacao",
 				"app/models/ativacao_auditada.rb"
-			],
-			[
-				"rout",
-				"config/routes.rb"
 			],
 			[
 				"application",
@@ -981,10 +877,6 @@
 			[
 				"produto",
 				"app/controllers/produto_pedidos_controller.rb"
-			],
-			[
-				"seed",
-				"db/seeds.rb"
 			],
 			[
 				"conve",

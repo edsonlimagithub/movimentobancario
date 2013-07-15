@@ -8,6 +8,7 @@ gem 'rails', '3.2.6'
 gem 'pg'
 gem 'therubyracer'
 gem 'devise'
+gem "paperclip", "~> 3.4.2"
 
 
 # Gems used only for assets and not required
