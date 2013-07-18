@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130715224800) do
+ActiveRecord::Schema.define(:version => 20130718215957) do
 
   create_table "contas", :force => true do |t|
     t.string   "descricao"
@@ -52,6 +52,22 @@ ActiveRecord::Schema.define(:version => 20130715224800) do
     t.string   "funcao"
     t.datetime "created_at", :null => false
     t.datetime "updated_at", :null => false
+  end
+
+  create_table "registro_sitefs", :force => true do |t|
+    t.boolean  "lancado"
+    t.string   "nsu_host"
+    t.string   "codigo_transacao"
+    t.string   "indentifi_pdv"
+    t.string   "codi_resp"
+    t.string   "estado_trasacao"
+    t.string   "numero_cartao_banco_ag_co"
+    t.string   "valor"
+    t.string   "num_par"
+    t.string   "autorizador"
+    t.string   "data_lancamen"
+    t.datetime "created_at",                :null => false
+    t.datetime "updated_at",                :null => false
   end
 
   create_table "sitef_files", :force => true do |t|

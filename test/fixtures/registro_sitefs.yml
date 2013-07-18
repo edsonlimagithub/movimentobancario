@@ -1,0 +1,27 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  lancado: false
+  nsu_host: MyString
+  codigo_transacao: MyString
+  indentifi_pdv: MyString
+  codi_resp: MyString
+  estado_trasacao: MyString
+  numero_cartao_banco_ag_co: MyString
+  valor: MyString
+  num_par: MyString
+  autorizador: MyString
+  data_lancamen: MyString
+
+two:
+  lancado: false
+  nsu_host: MyString
+  codigo_transacao: MyString
+  indentifi_pdv: MyString
+  codi_resp: MyString
+  estado_trasacao: MyString
+  numero_cartao_banco_ag_co: MyString
+  valor: MyString
+  num_par: MyString
+  autorizador: MyString
+  data_lancamen: MyString
