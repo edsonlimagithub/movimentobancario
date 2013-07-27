@@ -1,0 +1,34 @@
+<h1>Registros do arquivo sitef</h1>
+
+<table id="tabela">
+    <thead>
+      <tr>
+        <th>Produto</th>
+        <th>Valor</th>
+        <th>Parcelas</th>
+        <th>Pdv</th>
+      </tr>
+    </thead>
+    <tbody>
+        <% @registrosArquivoSitef.each do |r| %>
+          <tr>
+            <td><%= r[:nome_produto] %></td>
+            <td><%= r[:valor] %></td>
+            <td><%= r[:num_par] %></td>
+            <td><%= r[:indentifi_pdv]%></td>
+          </tr>
+        <% end %>
+    </tbody>
+</table>
+
+<br />
+<br />
+
+<%= link_to 'Confirmar', '#' %>
+
+<script type="text/javascript">
+    $(document).ready(function(){
+        $("#tabela").dataTable({});    
+    });
+    
+</script>

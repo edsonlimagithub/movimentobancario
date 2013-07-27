@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130718215957) do
+ActiveRecord::Schema.define(:version => 20130727184127) do
 
   create_table "contas", :force => true do |t|
     t.string   "descricao"
@@ -68,6 +68,9 @@ ActiveRecord::Schema.define(:version => 20130718215957) do
     t.string   "data_lancamen"
     t.datetime "created_at",                :null => false
     t.datetime "updated_at",                :null => false
+    t.string   "nome_produto"
+    t.string   "hora"
+    t.string   "nsu_sitef"
   end
 
   create_table "sitef_files", :force => true do |t|

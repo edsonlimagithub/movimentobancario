@@ -9,6 +9,7 @@ gem 'pg'
 gem 'therubyracer'
 gem 'devise'
 gem "paperclip", "~> 3.4.2"
+gem "roo", "~> 1.11.2"
 
 
 # Gems used only for assets and not required

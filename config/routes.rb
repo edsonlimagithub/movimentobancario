@@ -19,6 +19,6 @@ Movimentobancario::Application.routes.draw do
 
   match "/importacao/sitef" => "importacao#sitef"
 
-  match "/importacao/sitefSave" => "importacao#sitefSave"
+  match "/importacao/sitefExibirRegistros" => "importacao#sitefExibirRegistros"
   
 end

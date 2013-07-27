@@ -1,0 +1,109 @@
+Relatorios de Transações do SiTef  - Versao 0.0.43.13 - pagina [1]
+Loja [] - Data da impressao 04/07/2013 - 18:41:53 - Data do movimento 04/07/2013
+Todas as transacoes
+___________________________________________________________________________________________________________________________________________________________
+ Nome        Hora          NSU         NSU   Codigo     Idendifi  Codi  Estado          Numero_cartao              Valor  Num     Autorizador     Data     
+ produto                  SiTef        Host  transacao       PDV  resp  transacao  ou Banco Agência Co                    par                  lancamen    
+___________________________________________________________________________________________________________________________________________________________
+ REDECARD    07:22:43    040001   750142158  ABERTERM   TM000002        EFETUADA                                                     Redecard              
+ TICKET      07:31:17    040002   750155722  CMPCTDEB   TM000002        EFETUADA   602651*********3000             16,34             Redecard     04/07    
+ MASTERCARD  07:33:26    040003   750159492  CMPCTCRC   TM000001        EFETUADA      544731******0766             16,30   01        Redecard     04/07    
+ ALIMENTACA  07:40:52    040004   000040004  CMPCTDEB   TM000001        EFETUADA      506714******8030              6,98                Cielo              
+ MAESTRO     07:56:50    040005   750206202  CMPCTDEC   TM000005    55  NEGADA        589916******1644             13,84             Redecard     04/07    
+ ALIMENTACA  07:57:26    040006   000040006  CMPCTDEB   TM000001        EFETUADA      405884******8010             27,84                Cielo              
+ MAESTRO     07:57:48    040007   750208450  CMPCTDEC   TM000005    55  NEGADA        589916******1644             13,84             Redecard     04/07    
+ MAESTRO     07:58:47    040008   750210734  CMPCTDEC   TM000005    55  NEGADA        589916******1644             13,84             Redecard     04/07    
+ ALIMENTACA  08:44:37    040009   000040009  CMPCTDEB   TM000004        EFETUADA      405886******9019             23,99                Cielo              
+ BNBCLUBE    08:57:25    040010   750389310  CMPCTDEB   TM000004        EFETUADA      604636******6550             20,58             Redecard     04/07    
+ TICKET      09:08:37    040011   750432192  CMPCTDEB   TM000001        EFETUADA   602651*********5000             94,30             Redecard     04/07    
+ MAESTRO     09:22:14    040012   750489376  CMPCTDEC   TM000001        EFETUADA      589916******4303             19,60             Redecard     04/07    
+ ALIMENTACA  09:28:30    040013   000040013  CMPCTDEC   TM000002        EFETUADA      506761******4019             43,61                Cielo              
+ Sysdata     09:29:31    040014   036801776  ABERTERM   TM000003        EFETUADA                                                      Sysdata              
+ Sysdata     09:29:46    040015   012994016  CMPCTCRN   TM000003        EFETUADA      628167******0295             48,86   01         Sysdata     04/07    
+ MASTERCARD  09:36:27    040016   750548112  CMPCTCRM   TM000001        EFETUADA      549319******3442             16,23   01        Redecard     04/07    
+ Sysdata     09:37:56    040017   012994167  CMPCTCRM   TM000002        EFETUADA   628167*********2000             21,56   01         Sysdata     04/07    
+ SODEXO      09:42:40    040018   750573994  CMPCTDEB   TM000002        EFETUADA   603399*********2000             17,26             Redecard     04/07    
+ VISA CREDI  09:46:23    040019   000040019  CMPCTCRC   TM000001        EFETUADA      439354******5435             35,81                Cielo              
+ VISA ELECT  09:49:38    040020   000040020  CMPCTDEB   TM000002        EFETUADA      400178******7115             33,88                Cielo              
+ MAESTRO     09:59:45    040021   750651086  CMPCTDEB   TM000002        EFETUADA   603689*********6196             12,00             Redecard     04/07    
+ MASTERCARD  10:02:10    040022   750662038  CMPCTCRC   TM000001        EFETUADA      539029******6635            123,12   01        Redecard     04/07    
+ MASTERCARD  10:16:34    040023   750726840  CMPCTCRM   TM000002        EFETUADA      518407******9039            143,86   02        Redecard     04/07    
+ MASTERCARD  10:20:35    040024   750745656  CMPCTCRC   TM000001        EFETUADA      520403******9158             20,60   01        Redecard     04/07    
+ Libercard   10:29:12    040025   138035299  ABERTERM   TM000001        EFETUADA                                                    Libercard              
+ Libercard   10:29:52    040026   138035310  CMPCTDEB   TM000001        EFETUADA      606388******5026              8,70   01       Libercard              
+ Sysdata     10:38:42    040027   012995316  CMPCTCRM   TM000005        EFETUADA   628167*********4000             34,25   02         Sysdata     04/07    
+ HIPERCARD   10:44:32    040028   750847430  CMPCTCRC   TM000005        EFETUADA      606282******6483             29,08   01        Redecard     01/00    
+ SODEXO      10:45:22    040029   750851036  CMPCTDEB   TM000001        EFETUADA   603399*********1000             26,34             Redecard     04/07    
+ ELO DEBITO  10:48:13    040030   000040030  CMPCTDEC   TM000001        EFETUADA      506726******5209             55,41                Cielo              
+ ALIMENTACA  10:49:49    040031   000040031  CMPCTDEC   TM000001        EFETUADA      506761******0023             17,66                Cielo              
+ SODEXO      10:49:58    040032   750869222  CMPCTDEB   TM000004        EFETUADA   603399*********6000             52,85             Redecard     04/07    
+ Libercard   10:58:46    040033   138035993  CMPCTDEB   TM000001    13  NEGADA        606388******3066              6,12   01       Libercard              
+ ELO DEBITO  11:16:08    040034   000040034  CMPCTDEB   TM000005        EFETUADA      627780******1886              3,28                Cielo              
+ VISA CREDI  11:16:18    040035   000040035  CMPCTCRC   TM000001        EFETUADA      482425******2109             17,29                Cielo              
+ TICKET      11:22:46    040036   751019608  CMPCTDEB   TM000002        EFETUADA   602651*********3000             24,16             Redecard     04/07    
+ Sysdata     11:27:49    040037   012996398  CMPCTCRN   TM000001        EFETUADA      628167******0345            161,01   01         Sysdata     04/07    
+ MASTERCARD  11:29:31    040038   751049258  CMPCTCRM   TM000002        EFETUADA      514086******6018             20,89   01        Redecard     04/07    
+ SODEXO      11:34:34    040039   751074714  CMPCTDEB   TM000004        EFETUADA   603399*********9000             65,01             Redecard     04/07    
+ MAESTRO     11:37:37    040040   751090068  CMPCTDEC   TM000001        EFETUADA   603689*********5761             33,29             Redecard     04/07    
+ ELO DEBITO  11:44:19    040041   000040041  CMPCTDEC   TM000001        EFETUADA      627780******1849              4,34                Cielo              
+ Sysdata     12:09:40    040042   012997248  CMPCTCRM   TM000005        EFETUADA   628167*********5000              9,70   01         Sysdata     04/07    
+ SODEXO      12:19:36    040043   751327828  CMPCTDEB   TM000005        EFETUADA   603399*********8000              3,75             Redecard     04/07    
+ MAESTRO     12:34:27    040044   751429722  CMPCTDEC   TM000002        EFETUADA   603689*********8856            206,53             Redecard     04/07    
+Relatorios de Transações do SiTef  - Versao 0.0.43.13 - pagina [2]
+Loja [] - Data da impressao 04/07/2013 - 18:41:53 - Data do movimento 04/07/2013
+Todas as transacoes
+___________________________________________________________________________________________________________________________________________________________
+ Nome        Hora          NSU         NSU   Codigo     Idendifi  Codi  Estado          Numero_cartao              Valor  Num     Autorizador     Data     
+ produto                  SiTef        Host  transacao       PDV  resp  transacao  ou Banco Agência Co                    par                  lancamen    
+___________________________________________________________________________________________________________________________________________________________
+ MASTERCARD  12:52:16    040045   751555970  CMPCTCRC   TM000004        EFETUADA      527497******4468             73,70   01        Redecard     04/07    
+ MASTERCARD  13:22:27    040046   751763730  CMPCTCRC   TM000005        EFETUADA      548046******1219             11,79   01        Redecard     04/07    
+ Sysdata     13:35:53    040047   012998593  CMPCTCRN   TM000005        EFETUADA      628167******0350             74,30   01         Sysdata     04/07    
+ MASTERCARD  14:04:41    040048   752025968  CMPCTCRC   TM000002        EFETUADA      527407******2626            196,12   04        Redecard     04/07    
+ SODEXO      14:29:16    040049   752150460  CMPCTDEB   TM000005        EFETUADA   603399*********8000             13,90             Redecard     04/07    
+ SODEXO      14:31:12    040050   752159004  CMPCTDEB   TM000001        EFETUADA   603399*********8000            226,45             Redecard     04/07    
+ Sysdata     14:46:18    040051              CMPCTCRM   TM000002        CANC.TIM   628167*********9000             99,10   02         Sysdata              
+ ELO DEBITO  15:14:21    040053   000040053  CMPCTDEC   TM000003        EFETUADA      627780******5691              3,24                Cielo              
+ VISA CREDI  15:35:19    040054   000040054  CMPCTCRC   TM000001        EFETUADA      482425******4115             11,32                Cielo              
+ MASTERCARD  16:14:17    040055   752650294  CMPCTCRC   TM000003        EFETUADA      527468******9802             99,91   02        Redecard     04/07    
+ ALIMENTACA  16:19:41    040056   000040056  CMPCTDEC   TM000005        EFETUADA      506760******0024              4,23                Cielo              
+ HIPERCARD   16:31:47    040057   752741598  CMPCTCRC   TM000005        EFETUADA      606282******8603             13,49   01        Redecard     01/00    
+ ELO DEBITO  16:36:50    040058   000040058  CMPCTDEC   TM000003        EFETUADA      627780******6742             12,85                Cielo              
+ Libercard   16:44:28    040059   138043667  CMPCTDEB   TM000003    13  NEGADA        606388******8463             56,01   01       Libercard              
+ Libercard   16:45:17    040060   138043682  CMPCTDEB   TM000003        EFETUADA      606388******8463             56,01   01       Libercard              
+ HIPERCARD   17:02:07    040061   752899828  CMPCTCRC   TM000003        EFETUADA      606282******7928            217,03   02        Redecard     01/00    
+ Libercard   17:05:27    040062   138044633  CMPCTDEB   TM000003        EFETUADA      606388******5452             30,29   01       Libercard              
+ BNBCLUBE    17:06:24    040063   752920304  CMPCTDEB   TM000005        EFETUADA      604636******2904              8,08             Redecard     04/07    
+ VISA CREDI  17:13:47    040064   000040064  CMPCTCRC   TM000001        EFETUADA      455181******0118            218,80   02           Cielo              
+ VISA ELECT  17:14:46    040065   000040065  CMPCTDEB   TM000005        EFETUADA      400178******4108             22,33                Cielo              
+ TICKET      17:18:34    040066   752986900  CMPCTDEB   TM000005        EFETUADA   602651*********5000              7,95             Redecard     04/07    
+ MASTERCARD  17:19:06    040067   752990402  CMPCTCRC   TM000003        EFETUADA      548046******2780             70,00   02        Redecard     04/07    
+ VISA ELECT  17:19:58    040068   000040068  CMPCTDEC   TM000003        EFETUADA      409600******4067             32,14                Cielo              
+ MASTERCARD  17:27:12    040069   753041720  CMPCTCRC   TM000001        EFETUADA      548262******9041              1,89   01        Redecard     04/07    
+ TICKET      17:29:40    040070   753057730  CMPCTDEB   TM000004        EFETUADA   602651*********4000              9,00             Redecard     04/07    
+ VISA ELECT  17:50:31    040071   000040071  CMPCTDEB   TM000004        EFETUADA      400178******9101            190,13                Cielo              
+ VALECARD    17:53:23    040072   753232512  CMPCTDEB   TM000003        EFETUADA     606444*******6790            155,85             Redecard     04/07    
+ MASTERCARD  18:26:15    040073   753472650  CMPCTCRM   TM000003        EFETUADA      549319******7324            353,38   01        Redecard     04/07    
+ MAESTRO     18:30:55    040074   753502172  CMPCTDEC   TM000003        EFETUADA      528052******1356              7,46             Redecard     04/07    
+ SODEXO      18:34:41    040075   753523584  CMPCTDEB   TM000002        EFETUADA   603399*********1000            147,77             Redecard     04/07    
+ ALIMENTACA  18:36:45    040076   000040076  CMPCTDEB   TM000005        EFETUADA      405886******7011             11,04                Cielo              
+___________________________________________________________________________________________________________________________________________________________
+                 Quantidades            Valores                        Quantidades            Valores                                                      
+  Todas         [        75]                           Pagamentos     [         0]      [            0,00]                                                 
+  Débito        [        40]      [        1.756,42]   Canc.Pagamentos[         0]      [            0,00]                                                 
+  Crédito       [        26]      [        2.040,29]   Cancelamentos  [         0]      [            0,00]                                                 
+Relatorios de Transações do SiTef  - Versao 0.0.43.13 - pagina [3]
+Loja [] - Data da impressao 04/07/2013 - 18:41:53 - Data do movimento 04/07/2013
+Todas as transacoes
+___________________________________________________________________________________________________________________________________________________________
+ Nome        Hora          NSU         NSU   Codigo     Idendifi  Codi  Estado          Numero_cartao              Valor  Num     Autorizador     Data     
+ produto                  SiTef        Host  transacao       PDV  resp  transacao  ou Banco Agência Co                    par                  lancamen    
+___________________________________________________________________________________________________________________________________________________________
+  Pendentes     [         0]      [            0,00]   Negadas        [         5]      [          103,65]                                                 
+  Garantias     [         0]      [            0,00]   Nao validadas  [         1]      [           99,10]                                                 
+  Consulta Cheq.[         0]      [            0,00]   Pré-Autorização[         0]      [            0,00]                                                 
+  Consulta AVS  [         0]                           Estorno Pré-Aut[         0]      [            0,00]                                                 
+  Crédito Parc. [         7]      [          979,97]   Débito Parc.   [         0]      [            0,00]                                                 
+  Vlr Saque     [         0]      [            0,00]   Canc Vlr Saque [         0]      [            0,00]                                                 
+  Compra Virtual[         0]      [            0,00]   Canc Virtual   [         0]      [            0,00]                                                 
+  VENDAS VALIDAS[        66]      [        3.796,71]                                                                                                       

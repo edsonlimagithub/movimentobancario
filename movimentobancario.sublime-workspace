@@ -176,82 +176,18 @@
 	"buffers":
 	[
 		{
-			"file": "Gemfile",
-			"settings":
-			{
-				"buffer_size": 820,
-				"line_ending": "Unix"
-			}
-		},
-		{
 			"file": "app/controllers/importacao_controller.rb",
 			"settings":
 			{
-				"buffer_size": 192,
+				"buffer_size": 1426,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "app/views/importacao/sitef.html.erb",
+			"file": "app/views/importacao/sitefExibirRegistros.html.erb",
 			"settings":
 			{
-				"buffer_size": 168,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "app/models/sitef_file.rb",
-			"settings":
-			{
-				"buffer_size": 358,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "config/routes.rb",
-			"settings":
-			{
-				"buffer_size": 380,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "app/views/layouts/application.html.erb",
-			"settings":
-			{
-				"buffer_size": 5389,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "app/views/layouts/_importacao.html.erb",
-			"settings":
-			{
-				"buffer_size": 75,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "app/views/layouts/_cadastros.html.erb",
-			"settings":
-			{
-				"buffer_size": 192,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "app/controllers/contas_controller.rb",
-			"settings":
-			{
-				"buffer_size": 1899,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "app/models/conta.rb",
-			"settings":
-			{
-				"buffer_size": 109,
+				"buffer_size": 678,
 				"line_ending": "Unix"
 			}
 		}
@@ -332,25 +268,30 @@
 	},
 	"file_history":
 	[
+		"/home/edsonlima/projetos/movimentobancario/db/migrate/20130727184127_add_coluns_to_registro_sitef.rb",
+		"/home/edsonlima/projetos/movimentobancario/app/models/sitef_file.rb",
+		"/home/edsonlima/projetos/movimentobancario/config/routes.rb",
+		"/home/edsonlima/projetos/movimentobancario/app/views/importacao/sitef.html.erb",
+		"/home/edsonlima/projetos/movimentobancario/Gemfile",
+		"/home/edsonlima/projetos/movimentobancario/app/views/layouts/application.html.erb",
+		"/home/edsonlima/projetos/movimentobancario/app/controllers/contas_controller.rb",
+		"/home/edsonlima/projetos/movimentobancario/app/models/conta.rb",
+		"/home/edsonlima/projetos/movimentobancario/app/views/lancamentos/index.html.erb",
+		"/home/edsonlima/projetos/movimentobancario/app/views/layouts/_importacao.html.erb",
+		"/home/edsonlima/projetos/movimentobancario/app/views/layouts/_cadastros.html.erb",
 		"/home/edsonlima/projetos/movimentobancario/db/migrate/20130715224800_add_attachment_arquivo_to_sitef_files.rb",
 		"/home/edsonlima/projetos/movimentobancario/config/initializers/inflections.rb",
 		"/home/edsonlima/projetos/movimentobancario/app/controllers/lancamentos_controller.rb",
 		"/home/edsonlima/projetos/movimentobancario/doc/README_FOR_APP",
 		"/home/edsonlima/projetos/movimentobancario/app/controllers/application_controller.rb",
-		"/home/edsonlima/projetos/movimentobancario/app/views/layouts/application.html.erb",
 		"/home/edsonlima/projetos/movimentobancario/app/controllers/dashboard_controller.rb",
-		"/home/edsonlima/projetos/movimentobancario/app/views/layouts/_cadastros.html.erb",
 		"/home/edsonlima/projetos/movimentobancario/app/controllers/conta_controller.rb",
 		"/home/edsonlima/projetos/movimentobancario/app/views/conta/_form.html.erb",
-		"/home/edsonlima/projetos/movimentobancario/app/models/conta.rb",
 		"/home/edsonlima/projetos/movimentobancario/app/views/contas/_form.html.erb",
-		"/home/edsonlima/projetos/movimentobancario/config/routes.rb",
 		"/home/edsonlima/projetos/movimentobancario/app/models/lancamento.rb",
 		"/home/edsonlima/projetos/movimentobancario/config/environment.rb",
-		"/home/edsonlima/projetos/movimentobancario/app/controllers/contas_controller.rb",
 		"/home/edsonlima/projetos/movimentobancario/app/views/contas/new.html.erb",
 		"/home/edsonlima/projetos/movimentobancario/app/helpers/contas_helper.rb",
-		"/home/edsonlima/projetos/movimentobancario/app/views/lancamentos/index.html.erb",
 		"/home/edsonlima/projetos/movimentobancario/app/views/layouts/_lancamentos.html.erb",
 		"/home/edsonlima/projetos/movimentobancario/app/helpers/conta_helper.rb",
 		"/home/edsonlima/projetos/movimentobancario/app/models/contum.rb",
@@ -365,7 +306,6 @@
 		"/home/edsonlima/projetos/movimentobancario/app/assets/stylesheets/theme4.css",
 		"/home/edsonlima/projetos/movimentobancario/app/views/layouts/_lancamento.html.erb",
 		"/home/edsonlima/projetos/movimentobancario/config/database.yml",
-		"/home/edsonlima/projetos/movimentobancario/Gemfile",
 		"/home/edsonlima/projetos/movimentobancario/app/controllers/pages_controller.rb",
 		"/home/edsonlima/projetos/movimentobancario/test/functional/dashboard_controller_test.rb",
 		"/home/edsonlima/projetos/movimentobancario/app/assets/stylesheets/style.css",
@@ -455,11 +395,7 @@
 		"/home/edsonlima/projetos/dsmmanager/app/models/produto_pedido_item.rb",
 		"/home/edsonlima/projetos/dsmmanager/app/models/planilha_pedido.rb",
 		"/home/edsonlima/projetos/dsmmanager/app/controllers/atualizacao_aspixes_controller.rb",
-		"/home/edsonlima/projetos/dsmmanager/app/helpers/pdf_pedidos_helper.rb",
-		"/home/edsonlima/projetos/dsmmanager/app/models/pdf_pedido.rb",
-		"/home/edsonlima/projetos/escola/db/seeds.rb",
-		"/home/edsonlima/projetos/dsmmanager/app/views/ativacaos/new.html.erb",
-		"/home/edsonlima/projetos/dsmmanager/app/controllers/pdf_pedidos_controller.rb"
+		"/home/edsonlima/projetos/dsmmanager/app/helpers/pdf_pedidos_helper.rb"
 	],
 	"find":
 	{
@@ -533,23 +469,24 @@
 			[
 				{
 					"buffer": 0,
-					"file": "Gemfile",
+					"file": "app/controllers/importacao_controller.rb",
 					"settings":
 					{
-						"buffer_size": 820,
+						"buffer_size": 1426,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								210,
-								210
+								629,
+								629
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/Ruby/Ruby.tmLanguage"
+							"syntax": "Packages/Ruby/Ruby.tmLanguage",
+							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
@@ -559,124 +496,18 @@
 				},
 				{
 					"buffer": 1,
-					"file": "app/controllers/importacao_controller.rb",
+					"file": "app/views/importacao/sitefExibirRegistros.html.erb",
 					"settings":
 					{
-						"buffer_size": 192,
+						"buffer_size": 678,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								165,
-								165
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Ruby/Ruby.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 2,
-					"file": "app/views/importacao/sitef.html.erb",
-					"settings":
-					{
-						"buffer_size": 168,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								166,
-								166
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Rails/HTML (Rails).tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 3,
-					"file": "app/models/sitef_file.rb",
-					"settings":
-					{
-						"buffer_size": 358,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								326,
-								326
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Ruby/Ruby.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 4,
-					"file": "config/routes.rb",
-					"settings":
-					{
-						"buffer_size": 380,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								349,
-								349
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Ruby/Ruby.tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 5,
-					"file": "app/views/layouts/application.html.erb",
-					"settings":
-					{
-						"buffer_size": 5389,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								2202,
-								2202
+								500,
+								500
 							]
 						],
 						"settings":
@@ -684,112 +515,6 @@
 							"syntax": "Packages/Rails/HTML (Rails).tmLanguage",
 							"tab_size": 2,
 							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 255.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 6,
-					"file": "app/views/layouts/_importacao.html.erb",
-					"settings":
-					{
-						"buffer_size": 75,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								70,
-								70
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Rails/HTML (Rails).tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 7,
-					"file": "app/views/layouts/_cadastros.html.erb",
-					"settings":
-					{
-						"buffer_size": 192,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								192,
-								192
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Rails/HTML (Rails).tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 8,
-					"file": "app/controllers/contas_controller.rb",
-					"settings":
-					{
-						"buffer_size": 1899,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								0,
-								0
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Ruby/Ruby.tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 306.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 9,
-					"file": "app/models/conta.rb",
-					"settings":
-					{
-						"buffer_size": 109,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								50,
-								50
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Ruby/Ruby.tmLanguage"
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
@@ -846,6 +571,18 @@
 		"selected_items":
 		[
 			[
+				"site",
+				"app/models/sitef_file.rb"
+			],
+			[
+				"geml",
+				"Gemfile"
+			],
+			[
+				"lancamentos/in",
+				"app/views/lancamentos/index.html.erb"
+			],
+			[
 				"conta",
 				"app/models/conta.rb"
 			],
@@ -864,10 +601,6 @@
 			[
 				"routes",
 				"config/routes.rb"
-			],
-			[
-				"site",
-				"app/models/sitef_file.rb"
 			],
 			[
 				"importa",
