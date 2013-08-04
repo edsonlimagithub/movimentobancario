@@ -16,9 +16,13 @@ Movimentobancario::Application.routes.draw do
   get "pages/index"
 
   devise_for :users
-
+  #espera arquivo sitef
   match "/importacao/sitef" => "importacao#sitef"
-
+  #exibe registro do arquivo sitef
   match "/importacao/sitefExibirRegistros" => "importacao#sitefExibirRegistros"
+  #processa arquivo sitef: salva registro sitef e cria lançamentos
+  match "/importacao/processaRegistrosSitef" => "importacao#processaRegistrosSitef"
+
+
   
 end

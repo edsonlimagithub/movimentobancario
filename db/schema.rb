@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130727184127) do
+ActiveRecord::Schema.define(:version => 20130804192512) do
 
   create_table "contas", :force => true do |t|
     t.string   "descricao"
@@ -80,6 +80,7 @@ ActiveRecord::Schema.define(:version => 20130727184127) do
     t.string   "arquivo_content_type"
     t.integer  "arquivo_file_size"
     t.datetime "arquivo_updated_at"
+    t.date     "dia_correspondente"
   end
 
   create_table "users", :force => true do |t|

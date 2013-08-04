@@ -1,5 +1,9 @@
 <%= form_for @sitefFile, :url => '/importacao/sitefExibirRegistros', :html => { :multipart => true } do |f| %>
-  <%= f.file_field :arquivo %>
-  <%= f.button 'submit'%>
+	<p>
+		<%= f.label :dia_correspondente %>
+		<%= f.datetime_select :dia_correspondente %>
+  	<p>
+  	<%= f.file_field :arquivo %>
+  	<%= f.button 'submit'%>
 <% end %>
 

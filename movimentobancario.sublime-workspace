@@ -179,7 +179,7 @@
 			"file": "app/controllers/importacao_controller.rb",
 			"settings":
 			{
-				"buffer_size": 1426,
+				"buffer_size": 1547,
 				"line_ending": "Unix"
 			}
 		},
@@ -187,7 +187,15 @@
 			"file": "app/views/importacao/sitefExibirRegistros.html.erb",
 			"settings":
 			{
-				"buffer_size": 678,
+				"buffer_size": 745,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "db/seeds.rb",
+			"settings":
+			{
+				"buffer_size": 457,
 				"line_ending": "Unix"
 			}
 		}
@@ -472,15 +480,15 @@
 					"file": "app/controllers/importacao_controller.rb",
 					"settings":
 					{
-						"buffer_size": 1426,
+						"buffer_size": 1547,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								629,
-								629
+								932,
+								932
 							]
 						],
 						"settings":
@@ -489,7 +497,7 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 153.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -499,15 +507,15 @@
 					"file": "app/views/importacao/sitefExibirRegistros.html.erb",
 					"settings":
 					{
-						"buffer_size": 678,
+						"buffer_size": 745,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								500,
-								500
+								501,
+								501
 							]
 						],
 						"settings":
@@ -517,6 +525,32 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "db/seeds.rb",
+					"settings":
+					{
+						"buffer_size": 457,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								455,
+								455
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Ruby/Ruby.tmLanguage"
+						},
+						"translation.x": 12.0,
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
@@ -570,6 +604,10 @@
 		"height": 0.0,
 		"selected_items":
 		[
+			[
+				"seeds",
+				"db/seeds.rb"
+			],
 			[
 				"site",
 				"app/models/sitef_file.rb"
