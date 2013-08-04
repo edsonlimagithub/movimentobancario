@@ -14,13 +14,16 @@ class ImportacaoController < ApplicationController
 	private
 
 	def registrosArquivoSitef
-		valoresValidos = ["REDECARD", "MASTERCARD", "TICKET"]
+		valoresValidos = ["REDECARD", "MASTERCARD", "TICKET", "Sysdata", "ALIMENTACA", "SODEXO", "VISA CREDI"]
 		rs = File.open("public/arquivos_sitef/arquivo_sitef.prn")
 		linhas = Array.new
 		rs.each_line do |line|
 			colunas = line.force_encoding("iso-8859-1").split(" ")
-			puts colunas.inspect
 			if validarLinhaArquivoSitef colunas, valoresValidos
+				#abort colunas.length.inspect
+				if colunas.length < 12
+					colunas.insert 9, " "
+				end
 				coluna = Hash.new
 				coluna[:nome_produto]           = colunas[0]
 				coluna[:hora]                   = colunas[1]
