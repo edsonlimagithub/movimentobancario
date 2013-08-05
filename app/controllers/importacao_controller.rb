@@ -5,7 +5,7 @@ class ImportacaoController < ApplicationController
 	end
 
 	def sitefExibirRegistros
-		abort "Criar tratamento da data do dia correspondente do arquivo sitef"
+		#abort "Criar tratamento da data do dia correspondente do arquivo sitef"
 		@sitefFile = SitefFile.create(params[:sitef_file])
 		@sitefFile.save
 		@lancamentos = Array.new

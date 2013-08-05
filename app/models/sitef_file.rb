@@ -1,5 +1,5 @@
 class SitefFile < ActiveRecord::Base
-  attr_accessible :arquivo
+  attr_accessible :arquivo, :dia_correspondente
   has_attached_file :arquivo,
                   :url  => "/public/arquivos_sitef/arquivo_sitef.prn",
                   :path => ":rails_root/public/arquivos_sitef/arquivo_sitef.prn"

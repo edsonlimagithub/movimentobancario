@@ -1,9 +1,15 @@
 <%= form_for @sitefFile, :url => '/importacao/sitefExibirRegistros', :html => { :multipart => true } do |f| %>
 	<p>
 		<%= f.label :dia_correspondente %>
-		<%= f.datetime_select :dia_correspondente %>
+		<%= f.text_field :dia_correspondente, :size => 11 %>
   	<p>
   	<%= f.file_field :arquivo %>
   	<%= f.button 'submit'%>
 <% end %>
+
+<script>
+	$(function() {
+		$( "#sitef_file_dia_correspondente" ).datepicker();
+	});
+</script>
 
