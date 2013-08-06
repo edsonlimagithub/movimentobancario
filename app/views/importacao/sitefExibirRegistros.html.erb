@@ -1,5 +1,6 @@
 <h1>Registros do arquivo sitef</h1>
-<%= @sitefFile.dia_correspondente %>
+Dia Correspondente:
+<%= @sitefFile.dia_correspondente.strftime("%d/%m/%Y") %>
 <table id="tabela">
     <thead>
       <tr>
@@ -26,7 +27,7 @@
 <br />
 <br />
 
-<%= link_to 'Confirmar', '/importacao/processaRegistrosSitef' %>
+<%= link_to 'Confirmar', '/importacao/processaRegistrosSitef?data=' + @sitefFile.dia_correspondente.to_s %>
 
 <script type="text/javascript">
     $(document).ready(function(){

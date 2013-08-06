@@ -5,7 +5,6 @@ class ImportacaoController < ApplicationController
 	end
 
 	def sitefExibirRegistros
-		#abort "Criar tratamento da data do dia correspondente do arquivo sitef"
 		@sitefFile = SitefFile.create(params[:sitef_file])
 		@sitefFile.save
 		@lancamentos = Array.new
@@ -16,14 +15,19 @@ class ImportacaoController < ApplicationController
 	def processaRegistrosSitef
 		registrosArquivoSitef.each do |ras|
 			salvaRegistroSitef ras
-			criarLancamento ras
+			criarLancamento ras, params[:data]
 		end
 	end
 
 	private
 
 	def criarLancamento resgistroArquivoSitef
-		return false
+		abort 'criar lançamentos'
+		if true
+			return true
+		else
+			return false
+		end
 	end
 
 	def salvaRegistroSitef registroArquivoSitef

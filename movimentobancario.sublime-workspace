@@ -4,6 +4,22 @@
 		"selected_items":
 		[
 			[
+				"style",
+				"stylesheet"
+			],
+			[
+				"nsu",
+				"nsu_sitef"
+			],
+			[
+				"registro",
+				"registroArquivoSitef"
+			],
+			[
+				"reg",
+				"registroSitef"
+			],
+			[
 				"sitef",
 				"sitefeFile"
 			],
@@ -179,7 +195,7 @@
 			"file": "app/controllers/importacao_controller.rb",
 			"settings":
 			{
-				"buffer_size": 1547,
+				"buffer_size": 1962,
 				"line_ending": "Unix"
 			}
 		},
@@ -187,15 +203,47 @@
 			"file": "app/views/importacao/sitefExibirRegistros.html.erb",
 			"settings":
 			{
-				"buffer_size": 745,
+				"buffer_size": 815,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "db/seeds.rb",
+			"file": "config/routes.rb",
 			"settings":
 			{
-				"buffer_size": 457,
+				"buffer_size": 612,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/models/registro_sitef.rb",
+			"settings":
+			{
+				"buffer_size": 327,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/views/importacao/sitef.html.erb",
+			"settings":
+			{
+				"buffer_size": 380,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/views/layouts/application.html.erb",
+			"settings":
+			{
+				"buffer_size": 5526,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/models/sitef_file.rb",
+			"settings":
+			{
+				"buffer_size": 373,
 				"line_ending": "Unix"
 			}
 		}
@@ -276,6 +324,10 @@
 	},
 	"file_history":
 	[
+		"/home/edsonlima/projetos/movimentobancario/app/assets/stylesheets/jquery-ui-1.10.3.custom.min.css",
+		"/home/edsonlima/projetos/movimentobancario/db/migrate/20130804192512_add_dia_correspondente_to_sitef_files.rb",
+		"/home/edsonlima/projetos/movimentobancario/app/assets/javascripts/jquery-ui-1.10.3.custom.min.js",
+		"/home/edsonlima/projetos/movimentobancario/db/seeds.rb",
 		"/home/edsonlima/projetos/movimentobancario/db/migrate/20130727184127_add_coluns_to_registro_sitef.rb",
 		"/home/edsonlima/projetos/movimentobancario/app/models/sitef_file.rb",
 		"/home/edsonlima/projetos/movimentobancario/config/routes.rb",
@@ -305,7 +357,6 @@
 		"/home/edsonlima/projetos/movimentobancario/app/models/contum.rb",
 		"/home/edsonlima/projetos/movimentobancario/db/migrate/20130713122321_create_conta.rb",
 		"/home/edsonlima/projetos/movimentobancario/db/migrate/20130706203700_create_lancamentos.rb",
-		"/home/edsonlima/projetos/movimentobancario/db/seeds.rb",
 		"/home/edsonlima/projetos/movimentobancario/app/views/pages/index.html.erb",
 		"/home/edsonlima/projetos/movimentobancario/app/views/layouts/_dashboard.html.erb",
 		"/home/edsonlima/projetos/movimentobancario/app/assets/stylesheets/jquery.dataTables_themeroller.css",
@@ -400,10 +451,7 @@
 		"/home/edsonlima/projetos/dsmmanager/app/helpers/produto_pedidos_helper.rb",
 		"/home/edsonlima/projetos/dsmmanager/app/views/questaos/index.html.erb",
 		"/home/edsonlima/projetos/dsmmanager/app/views/consultors/index.html.erb",
-		"/home/edsonlima/projetos/dsmmanager/app/models/produto_pedido_item.rb",
-		"/home/edsonlima/projetos/dsmmanager/app/models/planilha_pedido.rb",
-		"/home/edsonlima/projetos/dsmmanager/app/controllers/atualizacao_aspixes_controller.rb",
-		"/home/edsonlima/projetos/dsmmanager/app/helpers/pdf_pedidos_helper.rb"
+		"/home/edsonlima/projetos/dsmmanager/app/models/produto_pedido_item.rb"
 	],
 	"find":
 	{
@@ -421,6 +469,13 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"glass",
+			"images",
+			"ui-bg",
+			"img",
+			"ui-bg_",
+			"ui-bg",
+			"nome_produto",
 			"current",
 			"theme=5",
 			"theme5",
@@ -480,15 +535,15 @@
 					"file": "app/controllers/importacao_controller.rb",
 					"settings":
 					{
-						"buffer_size": 1547,
+						"buffer_size": 1962,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								932,
-								932
+								267,
+								267
 							]
 						],
 						"settings":
@@ -497,7 +552,7 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 153.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -507,15 +562,15 @@
 					"file": "app/views/importacao/sitefExibirRegistros.html.erb",
 					"settings":
 					{
-						"buffer_size": 745,
+						"buffer_size": 815,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								501,
-								501
+								48,
+								48
 							]
 						],
 						"settings":
@@ -532,25 +587,133 @@
 				},
 				{
 					"buffer": 2,
-					"file": "db/seeds.rb",
+					"file": "config/routes.rb",
 					"settings":
 					{
-						"buffer_size": 457,
+						"buffer_size": 612,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								455,
-								455
+								562,
+								562
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Ruby/Ruby.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "app/models/registro_sitef.rb",
+					"settings":
+					{
+						"buffer_size": 327,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								60,
+								60
 							]
 						],
 						"settings":
 						{
 							"syntax": "Packages/Ruby/Ruby.tmLanguage"
 						},
-						"translation.x": 12.0,
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "app/views/importacao/sitef.html.erb",
+					"settings":
+					{
+						"buffer_size": 380,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								204,
+								204
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Rails/HTML (Rails).tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "app/views/layouts/application.html.erb",
+					"settings":
+					{
+						"buffer_size": 5526,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								617,
+								617
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Rails/HTML (Rails).tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"file": "app/models/sitef_file.rb",
+					"settings":
+					{
+						"buffer_size": 373,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								84,
+								84
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Ruby/Ruby.tmLanguage"
+						},
+						"translation.x": 0.0,
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
@@ -605,12 +768,36 @@
 		"selected_items":
 		[
 			[
-				"seeds",
-				"db/seeds.rb"
-			],
-			[
 				"site",
 				"app/models/sitef_file.rb"
+			],
+			[
+				"ui.",
+				"app/assets/stylesheets/jquery-ui-1.10.3.custom.min.css"
+			],
+			[
+				"jquery.ui",
+				"app/assets/javascripts/jquery-ui-1.10.3.custom.min.js"
+			],
+			[
+				"app",
+				"app/views/layouts/application.html.erb"
+			],
+			[
+				"importa",
+				"app/views/importacao/sitef.html.erb"
+			],
+			[
+				"registro",
+				"app/models/registro_sitef.rb"
+			],
+			[
+				"rou",
+				"config/routes.rb"
+			],
+			[
+				"seeds",
+				"db/seeds.rb"
 			],
 			[
 				"geml",
@@ -639,10 +826,6 @@
 			[
 				"routes",
 				"config/routes.rb"
-			],
-			[
-				"importa",
-				"app/controllers/importacao_controller.rb"
 			],
 			[
 				"infl",
@@ -678,10 +861,6 @@
 			],
 			[
 				"rout",
-				"config/routes.rb"
-			],
-			[
-				"rou",
 				"config/routes.rb"
 			],
 			[
@@ -723,10 +902,6 @@
 			[
 				"theme",
 				"app/assets/stylesheets/theme.css"
-			],
-			[
-				"app",
-				"app/views/layouts/application.html.erb"
 			],
 			[
 				"roues",
