@@ -1,4 +1,6 @@
 Movimentobancario::Application.routes.draw do
+  resources :produtos
+
   resources :prazos
 
   resources :grupo_eventos

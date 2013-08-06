@@ -6,8 +6,8 @@ class ImportacaoController < ApplicationController
 
 	def sitefExibirRegistros
 		@sitefFile = SitefFile.create(params[:sitef_file])
-		@sitefFile.save
-		@lancamentos = Array.new
+		#@sitefFile.save
+		#@lancamentos = Array.new
 		@registrosArquivoSitef = registrosArquivoSitef
 	end
 
@@ -21,8 +21,9 @@ class ImportacaoController < ApplicationController
 
 	private
 
-	def criarLancamento resgistroArquivoSitef
-		abort 'criar lançamentos'
+	def criarLancamento registroArquivoSitef, data_correspondente
+		produto = Produto.find :first, :conditions => ["descricao_sitef = ?", registroArquivoSitef[:nome_produto]]
+		abort produto.prazo.inspect
 		if true
 			return true
 		else
