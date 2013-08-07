@@ -6,16 +6,16 @@ class ImportacaoController < ApplicationController
 
 	def sitefExibirRegistros
 		@sitefFile = SitefFile.create(params[:sitef_file])
-		#@sitefFile.save
-		#@lancamentos = Array.new
+		@sitefFile.save
 		@registrosArquivoSitef = registrosArquivoSitef
 	end
 
 	#processa arquivo sitef, salvando registro sitef e efetuando os lançamentos
 	def processaRegistrosSitef
 		registrosArquivoSitef.each do |ras|
-			salvaRegistroSitef ras
-			criarLancamento ras, params[:data]
+			if salvaRegistroSitef ras
+				criarLancamento ras, params[:data]
+			end
 		end
 	end
 
@@ -23,18 +23,41 @@ class ImportacaoController < ApplicationController
 
 	def criarLancamento registroArquivoSitef, data_correspondente
 		produto = Produto.find :first, :conditions => ["descricao_sitef = ?", registroArquivoSitef[:nome_produto]]
-		abort produto.prazo.inspect
-		if true
-			return true
+		abort 'está dando um erro por conta de não haver o produto cadastrado. checar com solange do Deus te pague o cadastrado
+		dos produtos e tratar quando no registro não existir algum. Pode até ser colocado na exibição e o formulário de exibição
+		só ser submetido se não houver nenhum erro'
+		puts produto.inspect
+		data = dataLancamento produto.prazo.funcao, data_correspondente
+		if data
+			lancamento = Lancamento.new
+			lancamento.data = data
+			lancamento.valor = registroArquivoSitef.valor
+			abort lancamento.inspect
 		else
 			return false
 		end
 	end
 
+	def dataLancamento prazo_funcao, data_correspondente
+		data_correspondente = data_correspondente.to_date
+		case prazo_funcao
+		when "dias30"
+			data_retorno = data_correspondente + 30.day
+		else
+			return false
+		end
+		return data_retorno
+				
+	end
+
 	def salvaRegistroSitef registroArquivoSitef
 		if !RegistroSitef.find(:first, :conditions => ["nsu_sitef = ?", registroArquivoSitef[:nsu_sitef]])
 			registroSitef = RegistroSitef.new(registroArquivoSitef)
-			registroSitef.save
+			if registroSitef.save
+				return true
+			end
+		else
+			return false
 		end
 	end
 
