@@ -22,15 +22,13 @@ class ImportacaoController < ApplicationController
 	private
 
 	def criarLancamento registroArquivoSitef, data_correspondente
+		puts registroArquivoSitef[:nome_produto].inspect
 		produto = Produto.find :first, :conditions => ["descricao_sitef = ?", registroArquivoSitef[:nome_produto]]
-		abort 'está dando um erro por conta de não haver o produto cadastrado. checar com solange do Deus te pague o cadastrado
-		dos produtos e tratar quando no registro não existir algum. Pode até ser colocado na exibição e o formulário de exibição
-		só ser submetido se não houver nenhum erro'
-		puts produto.inspect
 		data = dataLancamento produto.prazo.funcao, data_correspondente
 		if data
 			lancamento = Lancamento.new
 			lancamento.data = data
+			abort registroArquivoSitef.valor.inspect
 			lancamento.valor = registroArquivoSitef.valor
 			abort lancamento.inspect
 		else
@@ -62,7 +60,8 @@ class ImportacaoController < ApplicationController
 	end
 
 	def registrosArquivoSitef
-		valoresValidos = ["REDECARD", "MASTERCARD", "TICKET", "Sysdata", "ALIMENTACA", "SODEXO", "VISA CREDI"]
+		valoresValidos = ["REDECARD", "MASTERCARD", "TICKET", "Sysdata", "ALIMENTACA", "SODEXO", "VISA CREDI",
+			"VISA ELECT", "Libercard", "BNBCLUBE", "MAESTRO", "ELO DEBITO", "ELO CREDIT", "GREENCARD", "HIPERCARD"]
 		rs = File.open("public/arquivos_sitef/arquivo_sitef.prn")
 		linhas = Array.new
 		rs.each_line do |line|

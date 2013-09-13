@@ -27,7 +27,8 @@
     <%= f.label "Grupo Evento" %><br />
     <%= f.collection_select :grupo_evento_id, GrupoEvento.all, :id, :descricao %>
   </div>
+</br>
   <div class="actions">
-    <%= f.submit %>
+    <%= f.submit 'Criar evento'%>
   </div>
 <% end %>

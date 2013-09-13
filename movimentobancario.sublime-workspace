@@ -4,6 +4,10 @@
 		"selected_items":
 		[
 			[
+				"data",
+				"data"
+			],
+			[
 				"reg",
 				"registroArquivoSitef"
 			],
@@ -50,10 +54,6 @@
 			[
 				"the",
 				"therubyracer"
-			],
-			[
-				"data",
-				"data_inicial"
 			],
 			[
 				"data_",
@@ -195,7 +195,7 @@
 			"file": "app/controllers/importacao_controller.rb",
 			"settings":
 			{
-				"buffer_size": 2102,
+				"buffer_size": 2741,
 				"line_ending": "Unix"
 			}
 		},
@@ -227,7 +227,7 @@
 			"file": "app/views/importacao/sitef.html.erb",
 			"settings":
 			{
-				"buffer_size": 380,
+				"buffer_size": 411,
 				"line_ending": "Unix"
 			}
 		},
@@ -236,6 +236,30 @@
 			"settings":
 			{
 				"buffer_size": 5526,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/views/eventos/new.html.erb",
+			"settings":
+			{
+				"buffer_size": 80,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/views/eventos/_form.html.erb",
+			"settings":
+			{
+				"buffer_size": 913,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "db/seeds.rb",
+			"settings":
+			{
+				"buffer_size": 457,
 				"line_ending": "Unix"
 			}
 		}
@@ -519,7 +543,7 @@
 	"groups":
 	[
 		{
-			"selected": 5,
+			"selected": 0,
 			"sheets":
 			[
 				{
@@ -527,15 +551,15 @@
 					"file": "app/controllers/importacao_controller.rb",
 					"settings":
 					{
-						"buffer_size": 2102,
+						"buffer_size": 2741,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								588,
-								588
+								828,
+								828
 							]
 						],
 						"settings":
@@ -544,7 +568,7 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 204.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -561,8 +585,8 @@
 						"selection":
 						[
 							[
-								765,
-								765
+								378,
+								378
 							]
 						],
 						"settings":
@@ -636,15 +660,15 @@
 					"file": "app/views/importacao/sitef.html.erb",
 					"settings":
 					{
-						"buffer_size": 380,
+						"buffer_size": 411,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								380,
-								380
+								385,
+								385
 							]
 						],
 						"settings":
@@ -669,8 +693,8 @@
 						"selection":
 						[
 							[
-								617,
-								617
+								1400,
+								1400
 							]
 						],
 						"settings":
@@ -681,6 +705,86 @@
 						},
 						"translation.x": 0.0,
 						"translation.y": 408.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"file": "app/views/eventos/new.html.erb",
+					"settings":
+					{
+						"buffer_size": 80,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								52,
+								52
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Rails/HTML (Rails).tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 7,
+					"file": "app/views/eventos/_form.html.erb",
+					"settings":
+					{
+						"buffer_size": 913,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								834,
+								834
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Rails/HTML (Rails).tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 8,
+					"file": "db/seeds.rb",
+					"settings":
+					{
+						"buffer_size": 457,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								456,
+								456
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Ruby/Ruby.tmLanguage"
+						},
+						"translation.x": 11.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -733,6 +837,22 @@
 		"height": 0.0,
 		"selected_items":
 		[
+			[
+				"sitef",
+				"app/views/importacao/sitef.html.erb"
+			],
+			[
+				"se",
+				"db/seeds.rb"
+			],
+			[
+				"eventos/for",
+				"app/views/eventos/_form.html.erb"
+			],
+			[
+				"eventos/new",
+				"app/views/eventos/new.html.erb"
+			],
 			[
 				"produto.r",
 				"app/models/produto.rb"
@@ -1228,14 +1348,6 @@
 			[
 				"addattacha",
 				"db/migrate/20130221194036_add_attachments_imagem_to_painel.rb"
-			],
-			[
-				"rename",
-				"db/migrate/20120926141420_rename_colums.rb"
-			],
-			[
-				"renameold",
-				"db/migrate/20111208191930_rename_old_consultor_to_funcionario.rb"
 			]
 		],
 		"width": 0.0
