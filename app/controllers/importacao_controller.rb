@@ -13,26 +13,25 @@ class ImportacaoController < ApplicationController
 	#processa arquivo sitef, salvando registro sitef e efetuando os lançamentos
 	def processaRegistrosSitef
 		registrosArquivoSitef.each do |ras|
-			if salvaRegistroSitef ras
-				criarLancamento ras, params[:data]
-			end
+			salvaRegistroSitef ras
+			criarLancamento ras, params[:data]
 		end
 	end
 
 	private
 
 	def criarLancamento registroArquivoSitef, data_correspondente
-		puts registroArquivoSitef[:nome_produto].inspect
 		produto = Produto.find :first, :conditions => ["descricao_sitef = ?", registroArquivoSitef[:nome_produto]]
 		data = dataLancamento produto.prazo.funcao, data_correspondente
+
 		if data
+			evento = Evento.find(2)
 			lancamento = Lancamento.new
 			lancamento.data = data
-			abort registroArquivoSitef.valor.inspect
-			lancamento.valor = registroArquivoSitef.valor
+			lancamento.valor = registroArquivoSitef[:valor]
+			lancamento.debito = false 
+			lancamento.save
 			abort lancamento.inspect
-		else
-			return false
 		end
 	end
 
