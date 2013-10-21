@@ -195,7 +195,7 @@
 			"file": "app/controllers/importacao_controller.rb",
 			"settings":
 			{
-				"buffer_size": 2741,
+				"buffer_size": 2691,
 				"line_ending": "Unix"
 			}
 		},
@@ -256,10 +256,29 @@
 			}
 		},
 		{
+			"contents": "# This file should contain all the record creation needed to seed the database with its default values.\n# The data can then be loaded with the rake db:seed (or created alongside the db with db:setup).\n#\n# Examples:\n#\n#   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])\n#   Mayor.create(name: 'Emanuel', city: cities.first)\nuser = User.create(:email => 'admin@admin.com.br', :password => 'admin123', :password_confirmation => 'admin123')\nevento = Evento.create(:descricao => 'Deposito', )\n",
 			"file": "db/seeds.rb",
+			"file_size": 457,
+			"file_write_time": 1379036286000000,
 			"settings":
 			{
-				"buffer_size": 457,
+				"buffer_size": 508,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/models/lancamento.rb",
+			"settings":
+			{
+				"buffer_size": 204,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/views/lancamentos/index.html.erb",
+			"settings":
+			{
+				"buffer_size": 1134,
 				"line_ending": "Unix"
 			}
 		}
@@ -485,6 +504,9 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"criarLancamento",
+			"salvaRegistroSitef",
+			"registroArquivoSitef",
 			"glass",
 			"images",
 			"ui-bg",
@@ -543,7 +565,7 @@
 	"groups":
 	[
 		{
-			"selected": 0,
+			"selected": 8,
 			"sheets":
 			[
 				{
@@ -551,15 +573,15 @@
 					"file": "app/controllers/importacao_controller.rb",
 					"settings":
 					{
-						"buffer_size": 2741,
+						"buffer_size": 2691,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								448,
-								448
+								770,
+								770
 							]
 						],
 						"settings":
@@ -568,7 +590,7 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 204.0,
+						"translation.y": 102.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -768,22 +790,76 @@
 					"file": "db/seeds.rb",
 					"settings":
 					{
-						"buffer_size": 457,
+						"buffer_size": 508,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								456,
-								456
+								506,
+								506
 							]
 						],
 						"settings":
 						{
 							"syntax": "Packages/Ruby/Ruby.tmLanguage"
 						},
-						"translation.x": 11.0,
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 9,
+					"file": "app/models/lancamento.rb",
+					"settings":
+					{
+						"buffer_size": 204,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								124,
+								124
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Ruby/Ruby.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 10,
+					"file": "app/views/lancamentos/index.html.erb",
+					"settings":
+					{
+						"buffer_size": 1134,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								495,
+								495
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Rails/HTML (Rails).tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
@@ -837,6 +913,22 @@
 		"height": 0.0,
 		"selected_items":
 		[
+			[
+				"seed",
+				"db/seeds.rb"
+			],
+			[
+				"l",
+				"app/models/lancamento.rb"
+			],
+			[
+				"lancamentos/",
+				"app/views/lancamentos/index.html.erb"
+			],
+			[
+				"lancamento.r",
+				"app/models/lancamento.rb"
+			],
 			[
 				"sitef",
 				"app/views/importacao/sitef.html.erb"
@@ -980,10 +1072,6 @@
 			[
 				"rout",
 				"config/routes.rb"
-			],
-			[
-				"seed",
-				"db/seeds.rb"
 			],
 			[
 				"theme4",
@@ -1336,18 +1424,6 @@
 			[
 				"atuali",
 				"app/controllers/atualizacao_aspixes_controller.rb"
-			],
-			[
-				"envi",
-				"config/environment.rb"
-			],
-			[
-				"see",
-				"db/seeds.rb"
-			],
-			[
-				"addattacha",
-				"db/migrate/20130221194036_add_attachments_imagem_to_painel.rb"
 			]
 		],
 		"width": 0.0
