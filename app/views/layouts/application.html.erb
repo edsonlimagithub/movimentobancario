@@ -23,9 +23,12 @@
 </head>
 
 <body>
+  <div>
+  </div>
   <div id="container">
       <div id="header">
           <h2>Controle Bancário</h2>
+      <% if user_signed_in? %>
         <div id="topmenu">
           <ul id="menu_principal">
               <li class="current" submenu="dashboard"><a href="#" onClick="atualiza_menu(this)" class="menu">Dashboard</a></li>
@@ -35,8 +38,18 @@
               <li><a href="#">CMS</a></li>
               <li><a href="#">Statistics</a></li>
               <li><a href="#">Settings</a></li>
+              <% if user_signed_in? %>
+  <li>
+  <%= link_to('Logout', destroy_user_session_path, :method => :delete) %>        
+  </li>
+<% else %>
+  <li>
+  <%= link_to('Login', new_user_session_path)  %>  
+  </li>
+<% end %>
           </ul>
         </div>
+        <% end %>
       </div>
         <div id="top-panel">
             <div id="panel">
@@ -45,7 +58,7 @@
               <div class="submenu" id="cadastros"><%= render :partial => "layouts/cadastros" %></div>
               <div class="submenu" id="importacao"><%= render :partial => "layouts/importacao" %></div>
             </div>
-      </div>
+        </div>
         <div id="wrapper">
             <div id="content">
               <%= yield %>
