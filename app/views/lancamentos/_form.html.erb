@@ -11,17 +11,21 @@
     </div>
   <% end %>
 
+   <div class="field">
+    <%= f.label 'Conta' %><br />
+    <%= f.select 'conta_id', Conta.all.collect {|c| [c.descricao, c.id]} %>
+  </div>
   <div class="field">
     <%= f.label :confirmado %><br />
     <%= f.check_box :confirmado %>
   </div>
   <div class="field">
-    <%= f.label :data %><br />
+    <%= f.label 'Data de efetivação' %><br />
     <%= f.date_select :data %>
   </div>
   <div class="field">
     <%= f.label :evento %><br />
-    <%= f.number_field :evento %>
+    <%= f.select 'evento_id', Evento.all.collect {|e| [e.descricao, e.id]} %>
   </div>
   <div class="field">
     <%= f.label :debito %><br />

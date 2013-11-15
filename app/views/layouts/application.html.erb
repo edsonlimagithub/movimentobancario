@@ -28,8 +28,8 @@
   <div id="container">
       <div id="header">
           <h2>Controle Bancário</h2>
-      <% if user_signed_in? %>
         <div id="topmenu">
+        <% if user_signed_in? %>
           <ul id="menu_principal">
               <li class="current" submenu="dashboard"><a href="#" onClick="atualiza_menu(this)" class="menu">Dashboard</a></li>
               <li submenu="lancamentos"><a href="#" class="menu" onClick="atualiza_menu(this)">Lançamentos</a></li>
@@ -38,18 +38,12 @@
               <li><a href="#">CMS</a></li>
               <li><a href="#">Statistics</a></li>
               <li><a href="#">Settings</a></li>
-              <% if user_signed_in? %>
   <li>
   <%= link_to('Logout', destroy_user_session_path, :method => :delete) %>        
   </li>
-<% else %>
-  <li>
-  <%= link_to('Login', new_user_session_path)  %>  
-  </li>
-<% end %>
-          </ul>
+
+          <% end %>
         </div>
-        <% end %>
       </div>
         <div id="top-panel">
             <div id="panel">
@@ -66,7 +60,7 @@
         </div>
         <div id="footer">
         <div>
-       Edson Lima - Programador - (85)87408916 - edson-lima@outlook.com
+       <%= link_to 'Edsis','http://edsis.com.br', :target => :blank %> - Edson Lima (85)87408916 - edsonlima@edsis.com.br 
         </div>
         <div id="styleswitcher">
             <ul>
