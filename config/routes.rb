@@ -1,4 +1,7 @@
 Movimentobancario::Application.routes.draw do
+
+  devise_for :views
+
   resources :produtos
 
   resources :prazos
@@ -17,7 +20,7 @@ Movimentobancario::Application.routes.draw do
 
   get "pages/index"
 
-  devise_for :users
+  devise_for :user
   #espera arquivo sitef
   match "/importacao/sitef" => "importacao#sitef"
   #exibe registro do arquivo sitef
