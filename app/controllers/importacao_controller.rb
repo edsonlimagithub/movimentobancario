@@ -1,5 +1,8 @@
 # encoding: utf-8
+require 'convert_value'
+
 class ImportacaoController < ApplicationController
+	
 	def sitef
 		@sitefFile = SitefFile.new
 	end
@@ -13,25 +16,38 @@ class ImportacaoController < ApplicationController
 	#processa arquivo sitef, salvando registro sitef e efetuando os lançamentos
 	def processaRegistrosSitef
 		registrosArquivoSitef.each do |ras|
-			salvaRegistroSitef ras
-			criarLancamento ras, params[:data]
+			if salvaRegistroSitef ras
+				criarLancamento ras, params[:data]
+			end
 		end
+		redirect_to '/importacao/sitef'
 	end
 
 	private
 
+	def convertFormat valor
+	    while valor["."]
+	      valor["."] = ""  
+	    end
+	    valor[","]   = "."
+	    return valor
+  	end 
+
 	def criarLancamento registroArquivoSitef, data_correspondente
 		produto = Produto.find :first, :conditions => ["descricao_sitef = ?", registroArquivoSitef[:nome_produto]]
 		data = dataLancamento produto.prazo.funcao, data_correspondente
-
-		if data
-			evento = Evento.find(2)
-			lancamento = Lancamento.new
-			lancamento.data = data
-			lancamento.valor = registroArquivoSitef[:valor]
-			lancamento.debito = false 
+		if registroArquivoSitef[:num_par] == ""
+			registroArquivoSitef[:num_par] = 1
+		end 
+		valor = (convertFormat registroArquivoSitef[:valor]).to_f
+		(0..registroArquivoSitef[:num_par].to_i).each do |registro| 
+			lancamento        = Lancamento.new
+			lancamento.data   = data
+			lancamento.valor  = valor / registroArquivoSitef[:num_par].to_i
+			lancamento.evento = produto.evento
+			lancamento.conta  = produto.conta
 			lancamento.save
-			abort lancamento.inspect
+			data = dataLancamento produto.prazo.funcao, data
 		end
 	end
 
@@ -61,6 +77,7 @@ class ImportacaoController < ApplicationController
 	def registrosArquivoSitef
 		valoresValidos = ["REDECARD", "MASTERCARD", "TICKET", "Sysdata", "ALIMENTACA", "SODEXO", "VISA CREDI",
 			"VISA ELECT", "Libercard", "BNBCLUBE", "MAESTRO", "ELO DEBITO", "ELO CREDIT", "GREENCARD", "HIPERCARD"]
+		valoresValidos = Produto.descricoesSitef
 		rs = File.open("public/arquivos_sitef/arquivo_sitef.prn")
 		linhas = Array.new
 		rs.each_line do |line|

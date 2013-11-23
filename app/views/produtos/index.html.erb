@@ -6,8 +6,6 @@
     <th>Descricao sitef</th>
     <th>Prazo</th>
     <th></th>
-    <th></th>
-    <th></th>
   </tr>
 
 <% @produtos.each do |produto| %>
@@ -15,9 +13,11 @@
     <td><%= produto.descricao %></td>
     <td><%= produto.descricao_sitef %></td>
     <td><%= produto.prazo.descricao %></td>
-    <td><%= link_to 'Show', produto %></td>
-    <td><%= link_to 'Edit', edit_produto_path(produto) %></td>
-    <td><%= link_to 'Destroy', produto, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+    <td>
+      <%= link_to 'Show', produto %>
+      <%= link_to 'Edit', edit_produto_path(produto) %>
+      <%= link_to 'Destroy', produto, method: :delete, data: { confirm: 'Are you sure?' } %>
+    </td>
   </tr>
 <% end %>
 </table>

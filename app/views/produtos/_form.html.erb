@@ -16,6 +16,14 @@
     <%= f.text_field :descricao %>
   </div>
   <div class="field">
+    <%= f.label :conta %><br />
+    <%= f.select :conta_id, Conta.all.collect {|c| [c.descricao, c.id]}, :selected => f.object.conta_id %>
+  </div>
+   <div class="field">
+    <%= f.label :evento %><br />
+    <%= f.select :evento_id, Evento.all.collect {|e| [e.descricao, e.id]}, :selected => f.object.evento_id %>
+  </div>
+  <div class="field">
     <%= f.label :descricao_sitef %><br />
     <%= f.text_field :descricao_sitef %>
   </div>

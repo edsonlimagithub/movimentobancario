@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20131115130154) do
+ActiveRecord::Schema.define(:version => 20131123144141) do
 
   create_table "contas", :force => true do |t|
     t.string   "descricao"
@@ -24,7 +24,6 @@ ActiveRecord::Schema.define(:version => 20131115130154) do
   create_table "eventos", :force => true do |t|
     t.string   "descricao"
     t.boolean  "debido"
-    t.integer  "prazo_id"
     t.integer  "grupo_evento_id"
     t.datetime "created_at",      :null => false
     t.datetime "updated_at",      :null => false
@@ -40,7 +39,6 @@ ActiveRecord::Schema.define(:version => 20131115130154) do
     t.boolean  "confirmado"
     t.date     "data"
     t.integer  "evento_id"
-    t.boolean  "debito"
     t.float    "valor"
     t.datetime "created_at", :null => false
     t.datetime "updated_at", :null => false
@@ -60,6 +58,8 @@ ActiveRecord::Schema.define(:version => 20131115130154) do
     t.integer  "prazo_id"
     t.datetime "created_at",      :null => false
     t.datetime "updated_at",      :null => false
+    t.integer  "evento_id"
+    t.integer  "conta_id"
   end
 
   create_table "registro_sitefs", :force => true do |t|

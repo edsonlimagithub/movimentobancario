@@ -19,10 +19,7 @@
     <%= f.label :debido %><br />
     <%= f.check_box :debido %>
   </div>
-  <div class="field">
-    <%= f.label "Prazo" %><br />
-    <%= f.collection_select :prazo_id, Prazo.all, :id, :descricao %>
-  </div>
+  
   <div class="field">
     <%= f.label "Grupo Evento" %><br />
     <%= f.collection_select :grupo_evento_id, GrupoEvento.all, :id, :descricao %>

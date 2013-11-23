@@ -28,10 +28,6 @@
     <%= f.select 'evento_id', Evento.all.collect {|e| [e.descricao, e.id]} %>
   </div>
   <div class="field">
-    <%= f.label :debito %><br />
-    <%= f.check_box :debito %>
-  </div>
-  <div class="field">
     <%= f.label :valor %><br />
     <%= f.text_field :valor %>
   </div>
