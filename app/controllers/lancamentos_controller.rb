@@ -3,7 +3,6 @@ class LancamentosController < ApplicationController
   # GET /lancamentos.json
   def index
     @lancamentos = Lancamento.all
-
     respond_to do |format|
       format.html # index.html.erb
       format.json { render json: @lancamentos }
@@ -80,4 +79,17 @@ class LancamentosController < ApplicationController
       format.json { head :no_content }
     end
   end
+
+  def confirmado
+    lancamento = Lancamento.find(params[:id])
+    if lancamento.confirmado
+      lancamento.confirmado = false
+    else
+      lancamento.confirmado = true
+    end
+    lancamento.save
+
+    render :nothing => true
+  end
+
 end

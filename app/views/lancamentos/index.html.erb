@@ -3,29 +3,31 @@
 <table id="tabela">
     <thead>
       <tr>
-        <th>Confirmado</th>
+        <th>OK</th>
         <th>Data</th>
+        <th>Referencia</th>
         <th>Evento</th>
+        <th>Credito</th>
         <th>Debito</th>
-        <th>Valor</th>
         <th>Saldo</th>
-        <th></th>
-        <th></th>
-        <th></th>
+        <th>Ações</th>
       </tr>
     </thead>
     <tbody>
         <% @lancamentos.each do |lancamento| %>
           <tr>
-            <td><%= lancamento.confirmado %></td>
-            <td><%= lancamento.data %></td>
-            <td><%= lancamento.evento %></td>
-            <td><%= lancamento.debito %></td>
+            <td><%= check_box_tag "confirmado_#{lancamento.id}", lancamento.id, lancamento.confirmado ? true : false, {:onchange => "alterarCheck(this);"} %></td>
+            <td><%= lancamento.data.strftime("%d/%m/%Y") %></td>
+            <td><%= lancamento.referencia %></td>
+            <td><%= lancamento.evento.descricao %></td>
             <td><%= lancamento.valor %></td>
+            <td>Debito</td>
             <td><%= 'saldo' %></td>
-            <td><%= link_to 'Show', lancamento %></td>
-            <td><%= link_to 'Edit', edit_lancamento_path(lancamento) %></td>
-            <td><%= link_to 'Destroy', lancamento, method: :delete, data: { confirm: 'Deseja realmente excluir?' } %></td>
+            <td>
+                <%= link_to 'Show', lancamento %>
+                <%= link_to 'Edit', edit_lancamento_path(lancamento) %>
+                <%= link_to 'Destroy', lancamento, method: :delete, data: { confirm: 'Deseja realmente excluir?' } %>
+            </td>
           </tr>
         <% end %>
     </tbody>
@@ -37,7 +39,17 @@
 
 <script type="text/javascript">
     $(document).ready(function(){
-        $("#tabela").dataTable({});    
+        oTable = $("#tabela").dataTable({});
+
+        oTable.fnSort( [ [1,'asc'] ] );
     });
+
+
+    var  alterarCheck = function(elemento){
+        var id = elemento.value
+        $.get('/lancamento/confirmado',
+            {id:id},
+            function(retorno){});
+    }
     
 </script>

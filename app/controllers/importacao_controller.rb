@@ -36,16 +36,17 @@ class ImportacaoController < ApplicationController
 	def criarLancamento registroArquivoSitef, data_correspondente
 		produto = Produto.find :first, :conditions => ["descricao_sitef = ?", registroArquivoSitef[:nome_produto]]
 		data = dataLancamento produto.prazo.funcao, data_correspondente
-		if registroArquivoSitef[:num_par] == ""
+		if registroArquivoSitef[:num_par].blank?
 			registroArquivoSitef[:num_par] = 1
 		end 
 		valor = (convertFormat registroArquivoSitef[:valor]).to_f
-		(0..registroArquivoSitef[:num_par].to_i).each do |registro| 
-			lancamento        = Lancamento.new
-			lancamento.data   = data
-			lancamento.valor  = valor / registroArquivoSitef[:num_par].to_i
-			lancamento.evento = produto.evento
-			lancamento.conta  = produto.conta
+		(1..registroArquivoSitef[:num_par].to_i).each do |registro| 
+			lancamento            = Lancamento.new
+			lancamento.data       = data
+			lancamento.valor      = valor / registroArquivoSitef[:num_par].to_i
+			lancamento.evento     = produto.evento
+			lancamento.conta      = produto.conta
+			lancamento.referencia = produto.descricao +  " : " + registroArquivoSitef[:nsu_sitef]
 			lancamento.save
 			data = dataLancamento produto.prazo.funcao, data
 		end
