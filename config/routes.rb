@@ -15,6 +15,8 @@ Movimentobancario::Application.routes.draw do
   resources :lancamentos
   #alterar status de confirmação do lançamento
   match "/lancamento/confirmado" => "lancamentos#confirmado"
+  #filtro para listagem de lançamentos
+  match "/lancamento/filtro" => "lancamentos#filtro"
 
   get "dashboard/index"
 

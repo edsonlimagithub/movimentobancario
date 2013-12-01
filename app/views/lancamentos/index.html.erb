@@ -20,8 +20,8 @@
             <td><%= lancamento.data.strftime("%d/%m/%Y") %></td>
             <td><%= lancamento.referencia %></td>
             <td><%= lancamento.evento.descricao %></td>
-            <td><%= lancamento.valor %></td>
-            <td>Debito</td>
+            <td><%=  !lancamento.evento.debido ? lancamento.valor : "" %></td>
+            <td><%=  lancamento.evento.debido ? lancamento.valor : "" %></td>
             <td><%= 'saldo' %></td>
             <td>
                 <%= link_to 'Show', lancamento %>

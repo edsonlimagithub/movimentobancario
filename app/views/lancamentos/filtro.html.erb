@@ -1,0 +1,24 @@
+<%= form_tag('/lancamentos', :method => 'get') do %>
+	<div>
+		Data Inicial </br>
+		<%= text_field_tag "dataInicial" %>
+	</div>
+	<div>
+		Data Final </br>
+		<%= text_field_tag "dataFinal" %>
+	</div>
+	<div>
+		Conta </br>
+		<%= select "contaId", "", Conta.all.collect {|c| [c.descricao, c.id]} %>
+	</div>
+	<%= submit_tag "Enviar" %>
+<% end %>
+
+<script>
+	$(function() {
+		$( "#dataInicial, #dataFinal" ).datepicker({
+			dateFormat: "dd/mm/yy"
+		});
+	});
+</script>
+

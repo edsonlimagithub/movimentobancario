@@ -2,7 +2,11 @@ class LancamentosController < ApplicationController
   # GET /lancamentos
   # GET /lancamentos.json
   def index
-    @lancamentos = Lancamento.all
+    dataInicial = DateTime.strptime(params[:dataInicial], "%d/%m/%Y").to_s(:db)
+    dataFinal = DateTime.strptime(params[:dataFinal], "%d/%m/%Y").to_s(:db)
+    @lancamentos = Lancamento.find(:all, 
+      :conditions => ["conta_id = ? AND data BETWEEN ? AND ?", params[:contaId][0], dataInicial, dataFinal])
+
     respond_to do |format|
       format.html # index.html.erb
       format.json { render json: @lancamentos }
@@ -90,6 +94,9 @@ class LancamentosController < ApplicationController
     lancamento.save
 
     render :nothing => true
+  end
+
+  def filtro
   end
 
 end
