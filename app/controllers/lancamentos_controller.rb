@@ -4,9 +4,32 @@ class LancamentosController < ApplicationController
   def index
     dataInicial = DateTime.strptime(params[:dataInicial], "%d/%m/%Y").to_s(:db)
     dataFinal = DateTime.strptime(params[:dataFinal], "%d/%m/%Y").to_s(:db)
+    lancamentos = Lancamento.find(:all, :conditions => ["data < ?", dataInicial])
+    
+    @saldo_inicial = 0
+
+    lancamentos.each do |lancamento|
+      if lancamento.evento.debito
+        @saldo_inicial = @saldo_inicial - lancamento.valor
+      else
+        @saldo_inicial = @saldo_inicial + lancamento.valor
+      end
+    end
+
     @lancamentos = Lancamento.find(:all, 
       :conditions => ["conta_id = ? AND data BETWEEN ? AND ?", params[:contaId][0], dataInicial, dataFinal])
 
+    saldo = @saldo_inicial
+
+    @lancamentos.each_with_index do |lancamento, i|
+      if lancamento.evento.debito
+        saldo = saldo - lancamento.valor
+      else
+        saldo = saldo + lancamento.valor
+      end
+      @lancamentos[i][:saldo] = saldo
+    end
+    
     respond_to do |format|
       format.html # index.html.erb
       format.json { render json: @lancamentos }

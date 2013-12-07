@@ -1,4 +1,5 @@
 <h1>Lançamentos</h1>
+<%= link_to 'Novo Lancamento', new_lancamento_path %>
 
 <table id="tabela">
     <thead>
@@ -14,19 +15,28 @@
       </tr>
     </thead>
     <tbody>
+        <tr>
+            <td></td>
+            <td></td>
+            <td>Saldo anterior</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td><%= @saldo_inicial.round(2) %></td>
+            <td></td>
+        </tr>
         <% @lancamentos.each do |lancamento| %>
           <tr>
             <td><%= check_box_tag "confirmado_#{lancamento.id}", lancamento.id, lancamento.confirmado ? true : false, {:onchange => "alterarCheck(this);"} %></td>
             <td><%= lancamento.data.strftime("%d/%m/%Y") %></td>
             <td><%= lancamento.referencia %></td>
             <td><%= lancamento.evento.descricao %></td>
-            <td><%=  !lancamento.evento.debido ? lancamento.valor : "" %></td>
-            <td><%=  lancamento.evento.debido ? lancamento.valor : "" %></td>
-            <td><%= 'saldo' %></td>
+            <td><%=  !lancamento.evento.debito ? lancamento.valor : "" %></td>
+            <td><%=  lancamento.evento.debito ? lancamento.valor : "" %></td>
+            <td><%= lancamento.saldo.round(2)  %></td>
             <td>
-                <%= link_to 'Show', lancamento %>
-                <%= link_to 'Edit', edit_lancamento_path(lancamento) %>
-                <%= link_to 'Destroy', lancamento, method: :delete, data: { confirm: 'Deseja realmente excluir?' } %>
+                <%= link_to 'Alterar', edit_lancamento_path(lancamento) %>
+                <%= link_to 'Excluir', lancamento, method: :delete, data: { confirm: 'Deseja realmente excluir?' } %>
             </td>
           </tr>
         <% end %>
@@ -35,7 +45,6 @@
 
 <br />
 
-<%= link_to 'Novo Lancamento', new_lancamento_path %>
 
 <script type="text/javascript">
     $(document).ready(function(){
