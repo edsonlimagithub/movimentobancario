@@ -4,6 +4,10 @@
 		"selected_items":
 		[
 			[
+				"data",
+				"dataFinal"
+			],
+			[
 				"conta",
 				"conta_id"
 			],
@@ -14,10 +18,6 @@
 			[
 				"link",
 				"link_to"
-			],
-			[
-				"data",
-				"data"
 			],
 			[
 				"reg",
@@ -211,7 +211,7 @@
 			"file": "app/views/lancamentos/index.html.erb",
 			"settings":
 			{
-				"buffer_size": 1546,
+				"buffer_size": 1630,
 				"line_ending": "Unix"
 			}
 		},
@@ -219,15 +219,15 @@
 			"file": "app/controllers/lancamentos_controller.rb",
 			"settings":
 			{
-				"buffer_size": 2360,
+				"buffer_size": 2654,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "config/routes.rb",
+			"file": "app/views/lancamentos/filtro.html.erb",
 			"settings":
 			{
-				"buffer_size": 764,
+				"buffer_size": 460,
 				"line_ending": "Unix"
 			}
 		},
@@ -236,6 +236,14 @@
 			"settings":
 			{
 				"buffer_size": 3314,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/views/layouts/_lancamentos.html.erb",
+			"settings":
+			{
+				"buffer_size": 163,
 				"line_ending": "Unix"
 			}
 		}
@@ -316,21 +324,22 @@
 	},
 	"file_history":
 	[
-		"/home/edsonlima/projetos/movimentobancario/app/views/lancamentos/show.html.erb",
+		"/home/edsonlima/projetos/movimentobancario/config/routes.rb",
 		"/home/edsonlima/projetos/movimentobancario/app/controllers/importacao_controller.rb",
+		"/home/edsonlima/projetos/movimentobancario/app/views/layouts/application.html.erb",
+		"/home/edsonlima/projetos/movimentobancario/app/views/layouts/_lancamentos.html.erb",
+		"/home/edsonlima/projetos/movimentobancario/app/views/importacao/sitef.html.erb",
+		"/home/edsonlima/projetos/movimentobancario/app/views/lancamentos/show.html.erb",
 		"/home/edsonlima/projetos/movimentobancario/db/migrate/20131130140116_rem_dedido_to_debito_in_eventos.rb",
 		"/home/edsonlima/projetos/movimentobancario/app/models/lancamento.rb",
 		"/home/edsonlima/projetos/movimentobancario/app/views/produtos/show.html.erb",
 		"/home/edsonlima/projetos/movimentobancario/app/models/evento.rb",
 		"/home/edsonlima/projetos/movimentobancario/app/views/lancamentos/_form.html.erb",
-		"/home/edsonlima/projetos/movimentobancario/config/routes.rb",
 		"/home/edsonlima/projetos/movimentobancario/db/migrate/20131130133656_add_referencia_to_lancamentos.rb",
 		"/home/edsonlima/projetos/movimentobancario/app/views/eventos/index.html.erb",
-		"/home/edsonlima/projetos/movimentobancario/app/views/layouts/application.html.erb",
 		"/home/edsonlima/projetos/movimentobancario/lib/convert_value.rb",
 		"/home/edsonlima/projetos/movimentobancario/app/views/importacao/sitefExibirRegistros.html.erb",
 		"/home/edsonlima/projetos/movimentobancario/app/models/registro_sitef.rb",
-		"/home/edsonlima/projetos/movimentobancario/app/views/importacao/sitef.html.erb",
 		"/home/edsonlima/projetos/movimentobancario/app/models/produto.rb",
 		"/home/edsonlima/projetos/movimentobancario/app/views/produtos/_form.html.erb",
 		"/home/edsonlima/projetos/movimentobancario/db/migrate/20131123144141_rem_debito_in_lancamentos.rb",
@@ -360,7 +369,6 @@
 		"/home/edsonlima/projetos/movimentobancario/app/views/eventos/new.html.erb",
 		"/home/edsonlima/projetos/movimentobancario/app/views/lancamentos/index.html.erb",
 		"/home/edsonlima/projetos/movimentobancario/app/assets/stylesheets/style.css",
-		"/home/edsonlima/projetos/movimentobancario/app/views/layouts/_lancamentos.html.erb",
 		"/home/edsonlima/projetos/movimentobancario/app/views/lancamentos/new.html.erb",
 		"/home/edsonlima/projetos/movimentobancario/app/models/sitef_file.rb",
 		"/home/edsonlima/projetos/movimentobancario/app/models/conta.rb",
@@ -522,7 +530,7 @@
 	"groups":
 	[
 		{
-			"selected": 1,
+			"selected": 5,
 			"sheets":
 			[
 				{
@@ -558,15 +566,15 @@
 					"file": "app/views/lancamentos/index.html.erb",
 					"settings":
 					{
-						"buffer_size": 1546,
+						"buffer_size": 1630,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								755,
-								755
+								499,
+								499
 							]
 						],
 						"settings":
@@ -586,15 +594,15 @@
 					"file": "app/controllers/lancamentos_controller.rb",
 					"settings":
 					{
-						"buffer_size": 2360,
+						"buffer_size": 2654,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								2348,
-								2348
+								308,
+								308
 							]
 						],
 						"settings":
@@ -604,32 +612,31 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 986.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
 				},
 				{
 					"buffer": 3,
-					"file": "config/routes.rb",
+					"file": "app/views/lancamentos/filtro.html.erb",
 					"settings":
 					{
-						"buffer_size": 764,
+						"buffer_size": 460,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								295,
-								295
+								328,
+								328
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/Ruby/Ruby.tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
+							"syntax": "Packages/Rails/HTML (Rails).tmLanguage",
+							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
@@ -649,8 +656,8 @@
 						"selection":
 						[
 							[
-								1090,
-								1090
+								607,
+								607
 							]
 						],
 						"settings":
@@ -659,7 +666,33 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 459.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "app/views/layouts/_lancamentos.html.erb",
+					"settings":
+					{
+						"buffer_size": 163,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								158,
+								158
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Rails/HTML (Rails).tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -713,12 +746,32 @@
 		"selected_items":
 		[
 			[
+				"_la",
+				"app/views/layouts/_lancamentos.html.erb"
+			],
+			[
 				"importa",
 				"app/controllers/importacao_controller.rb"
 			],
 			[
+				"sitef",
+				"app/views/importacao/sitef.html.erb"
+			],
+			[
+				"lanc",
+				"app/controllers/lancamentos_controller.rb"
+			],
+			[
 				"routes",
 				"config/routes.rb"
+			],
+			[
+				"_lan",
+				"app/views/layouts/_lancamentos.html.erb"
+			],
+			[
+				"aplica",
+				"app/views/layouts/application.html.erb"
 			],
 			[
 				"impor",
@@ -759,10 +812,6 @@
 			[
 				"sitefexi",
 				"app/views/importacao/sitefExibirRegistros.html.erb"
-			],
-			[
-				"sitef",
-				"app/views/importacao/sitef.html.erb"
 			],
 			[
 				"lancamentos/_fo",
@@ -863,10 +912,6 @@
 			[
 				"lancamentos/new",
 				"app/views/lancamentos/new.html.erb"
-			],
-			[
-				"_lan",
-				"app/views/layouts/_lancamentos.html.erb"
 			],
 			[
 				"styl",
@@ -1211,18 +1256,6 @@
 			[
 				"produto_pedidos/new",
 				"app/views/produto_pedidos/new.html.erb"
-			],
-			[
-				"produto_pedidos/index",
-				"app/views/produto_pedidos/index.html.erb"
-			],
-			[
-				"mobile",
-				"app/controllers/mobile_controller.rb"
-			],
-			[
-				"libera",
-				"app/views/mobile/libera_questionario.html.erb"
 			]
 		],
 		"width": 0.0
