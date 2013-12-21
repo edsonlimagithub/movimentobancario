@@ -4,8 +4,12 @@
 		"selected_items":
 		[
 			[
+				"saldo",
+				"saldo_inicial"
+			],
+			[
 				"data",
-				"dataFinal"
+				"dataInicial"
 			],
 			[
 				"conta",
@@ -208,18 +212,10 @@
 			}
 		},
 		{
-			"file": "app/views/lancamentos/index.html.erb",
-			"settings":
-			{
-				"buffer_size": 1630,
-				"line_ending": "Unix"
-			}
-		},
-		{
 			"file": "app/controllers/lancamentos_controller.rb",
 			"settings":
 			{
-				"buffer_size": 2654,
+				"buffer_size": 3252,
 				"line_ending": "Unix"
 			}
 		},
@@ -244,6 +240,14 @@
 			"settings":
 			{
 				"buffer_size": 163,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/models/evento.rb",
+			"settings":
+			{
+				"buffer_size": 179,
 				"line_ending": "Unix"
 			}
 		}
@@ -324,37 +328,39 @@
 	},
 	"file_history":
 	[
+		"/home/edsonlima/projetos/movimentobancario/app/views/lancamentos/index.html.erb",
+		"/home/edsonlima/projetos/movimentobancario/app/models/lancamento.rb",
+		"/home/edsonlima/projetos/movimentobancario/app/views/lancamentos/show.html.erb",
+		"/home/edsonlima/projetos/movimentobancario/app/views/eventos/_form.html.erb",
+		"/home/edsonlima/projetos/movimentobancario/app/views/eventos/show.html.erb",
+		"/home/edsonlima/projetos/movimentobancario/app/controllers/prazos_controller.rb",
+		"/home/edsonlima/projetos/movimentobancario/app/views/eventos/index.html.erb",
+		"/home/edsonlima/projetos/movimentobancario/db/migrate/20131115130154_ren_evento_to_evento_id_in_lancamentos.rb",
+		"/home/edsonlima/projetos/movimentobancario/db/migrate/20131130140116_rem_dedido_to_debito_in_eventos.rb",
+		"/home/edsonlima/projetos/movimentobancario/db/migrate/20131123144141_rem_debito_in_lancamentos.rb",
+		"/home/edsonlima/projetos/movimentobancario/db/migrate/20131123132446_rem_prazo_id_in_evento.rb",
 		"/home/edsonlima/projetos/movimentobancario/config/routes.rb",
 		"/home/edsonlima/projetos/movimentobancario/app/controllers/importacao_controller.rb",
 		"/home/edsonlima/projetos/movimentobancario/app/views/layouts/application.html.erb",
 		"/home/edsonlima/projetos/movimentobancario/app/views/layouts/_lancamentos.html.erb",
 		"/home/edsonlima/projetos/movimentobancario/app/views/importacao/sitef.html.erb",
-		"/home/edsonlima/projetos/movimentobancario/app/views/lancamentos/show.html.erb",
-		"/home/edsonlima/projetos/movimentobancario/db/migrate/20131130140116_rem_dedido_to_debito_in_eventos.rb",
-		"/home/edsonlima/projetos/movimentobancario/app/models/lancamento.rb",
 		"/home/edsonlima/projetos/movimentobancario/app/views/produtos/show.html.erb",
 		"/home/edsonlima/projetos/movimentobancario/app/models/evento.rb",
 		"/home/edsonlima/projetos/movimentobancario/app/views/lancamentos/_form.html.erb",
 		"/home/edsonlima/projetos/movimentobancario/db/migrate/20131130133656_add_referencia_to_lancamentos.rb",
-		"/home/edsonlima/projetos/movimentobancario/app/views/eventos/index.html.erb",
 		"/home/edsonlima/projetos/movimentobancario/lib/convert_value.rb",
 		"/home/edsonlima/projetos/movimentobancario/app/views/importacao/sitefExibirRegistros.html.erb",
 		"/home/edsonlima/projetos/movimentobancario/app/models/registro_sitef.rb",
 		"/home/edsonlima/projetos/movimentobancario/app/models/produto.rb",
 		"/home/edsonlima/projetos/movimentobancario/app/views/produtos/_form.html.erb",
-		"/home/edsonlima/projetos/movimentobancario/db/migrate/20131123144141_rem_debito_in_lancamentos.rb",
 		"/home/edsonlima/projetos/movimentobancario/app/models/prazo.rb",
 		"/home/edsonlima/projetos/movimentobancario/db/migrate/20131123143955_rem_debito_in_eventos.rb",
-		"/home/edsonlima/projetos/movimentobancario/app/views/eventos/_form.html.erb",
 		"/home/edsonlima/projetos/movimentobancario/app/views/produtos/index.html.erb",
-		"/home/edsonlima/projetos/movimentobancario/app/views/eventos/show.html.erb",
 		"/home/edsonlima/projetos/movimentobancario/db/migrate/20131123132937_add_evento_id_in_produtos.rb",
 		"/home/edsonlima/projetos/movimentobancario/db/migrate/20131123135448_add_conta_id_in_produtos.rb",
 		"/home/edsonlima/projetos/movimentobancario/db/schema.rb",
-		"/home/edsonlima/projetos/movimentobancario/db/migrate/20131123132446_rem_prazo_id_in_evento.rb",
 		"/home/edsonlima/projetos/movimentobancario/config/environment.rb",
 		"/home/edsonlima/projetos/movimentobancario/config/environments/production.rb",
-		"/home/edsonlima/projetos/movimentobancario/db/migrate/20131115130154_ren_evento_to_evento_id_in_lancamentos.rb",
 		"/home/edsonlima/projetos/movimentobancario/db/migrate/20131115123005_add_devise_to_views.rb",
 		"/home/edsonlima/projetos/movimentobancario/db/seeds.rb",
 		"/home/edsonlima/projetos/movimentobancario/db/migrate/20131115121804_devise_create_views.rb",
@@ -367,7 +373,6 @@
 		"/home/edsonlima/projetos/movimentobancario/app/models/view.rb",
 		"/home/edsonlima/projetos/movimentobancario/app/views/users/sessions/new.html.erb",
 		"/home/edsonlima/projetos/movimentobancario/app/views/eventos/new.html.erb",
-		"/home/edsonlima/projetos/movimentobancario/app/views/lancamentos/index.html.erb",
 		"/home/edsonlima/projetos/movimentobancario/app/assets/stylesheets/style.css",
 		"/home/edsonlima/projetos/movimentobancario/app/views/lancamentos/new.html.erb",
 		"/home/edsonlima/projetos/movimentobancario/app/models/sitef_file.rb",
@@ -450,8 +455,7 @@
 		"/home/edsonlima/projetos/dsmmanager/app/helpers/questionarios_helper.rb",
 		"/home/edsonlima/projetos/dsmmanager/app/views/questionarios/perguntas_respostas_filtro.html.erb",
 		"/home/edsonlima/projetos/dsmmanager/app/models/questionario_resposta.rb",
-		"/home/edsonlima/projetos/dsmmanager/app/models/questao_opcao.rb",
-		"/home/edsonlima/projetos/dsmmanager/app/controllers/metas_controller.rb"
+		"/home/edsonlima/projetos/dsmmanager/app/models/questao_opcao.rb"
 	],
 	"find":
 	{
@@ -530,7 +534,7 @@
 	"groups":
 	[
 		{
-			"selected": 5,
+			"selected": 3,
 			"sheets":
 			[
 				{
@@ -563,46 +567,18 @@
 				},
 				{
 					"buffer": 1,
-					"file": "app/views/lancamentos/index.html.erb",
-					"settings":
-					{
-						"buffer_size": 1630,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								499,
-								499
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Rails/HTML (Rails).tmLanguage",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 2,
 					"file": "app/controllers/lancamentos_controller.rb",
 					"settings":
 					{
-						"buffer_size": 2654,
+						"buffer_size": 3252,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								308,
-								308
+								271,
+								271
 							]
 						],
 						"settings":
@@ -618,7 +594,7 @@
 					"type": "text"
 				},
 				{
-					"buffer": 3,
+					"buffer": 2,
 					"file": "app/views/lancamentos/filtro.html.erb",
 					"settings":
 					{
@@ -645,7 +621,7 @@
 					"type": "text"
 				},
 				{
-					"buffer": 4,
+					"buffer": 3,
 					"file": "app/controllers/importacao_controller.rb",
 					"settings":
 					{
@@ -656,8 +632,8 @@
 						"selection":
 						[
 							[
-								607,
-								607
+								1352,
+								1352
 							]
 						],
 						"settings":
@@ -672,7 +648,7 @@
 					"type": "text"
 				},
 				{
-					"buffer": 5,
+					"buffer": 4,
 					"file": "app/views/layouts/_lancamentos.html.erb",
 					"settings":
 					{
@@ -683,13 +659,39 @@
 						"selection":
 						[
 							[
-								158,
-								158
+								163,
+								163
 							]
 						],
 						"settings":
 						{
 							"syntax": "Packages/Rails/HTML (Rails).tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "app/models/evento.rb",
+					"settings":
+					{
+						"buffer_size": 179,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								179,
+								179
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Ruby/Ruby.tmLanguage"
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
@@ -746,6 +748,38 @@
 		"selected_items":
 		[
 			[
+				"prazo",
+				"app/controllers/prazos_controller.rb"
+			],
+			[
+				"eventos/sw",
+				"app/views/eventos/show.html.erb"
+			],
+			[
+				"eventos/",
+				"app/views/eventos/_form.html.erb"
+			],
+			[
+				"lancamentos/s",
+				"app/views/lancamentos/show.html.erb"
+			],
+			[
+				"lancamento",
+				"app/models/lancamento.rb"
+			],
+			[
+				"lancamentos/in",
+				"app/views/lancamentos/index.html.erb"
+			],
+			[
+				"eventos/i",
+				"app/views/eventos/index.html.erb"
+			],
+			[
+				"evento.",
+				"app/models/evento.rb"
+			],
+			[
 				"_la",
 				"app/views/layouts/_lancamentos.html.erb"
 			],
@@ -778,16 +812,8 @@
 				"app/controllers/importacao_controller.rb"
 			],
 			[
-				"lancamentos/s",
-				"app/views/lancamentos/show.html.erb"
-			],
-			[
 				"lancamento/_form",
 				"app/views/lancamentos/_form.html.erb"
-			],
-			[
-				"lancamento",
-				"app/models/lancamento.rb"
 			],
 			[
 				"lancamento.rb",
@@ -818,16 +844,8 @@
 				"app/views/lancamentos/_form.html.erb"
 			],
 			[
-				"eventos/",
-				"app/views/eventos/index.html.erb"
-			],
-			[
 				"",
 				"app/views/lancamentos/_form.html.erb"
-			],
-			[
-				"prazo",
-				"app/models/prazo.rb"
 			],
 			[
 				"produ",
@@ -992,10 +1010,6 @@
 			[
 				"geml",
 				"Gemfile"
-			],
-			[
-				"lancamentos/in",
-				"app/views/lancamentos/index.html.erb"
 			],
 			[
 				"contas",
@@ -1244,18 +1258,6 @@
 			[
 				"metas_con",
 				"app/controllers/metas_controller.rb"
-			],
-			[
-				"produto_con",
-				"app/controllers/produtos_controller.rb"
-			],
-			[
-				"module",
-				"lib/ativacoes_module.rb"
-			],
-			[
-				"produto_pedidos/new",
-				"app/views/produto_pedidos/new.html.erb"
 			]
 		],
 		"width": 0.0
