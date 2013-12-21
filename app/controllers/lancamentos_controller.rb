@@ -107,6 +107,15 @@ class LancamentosController < ApplicationController
     end
   end
 
+  def apagar_lancamento
+    lancamento = Lancamento.find params[:id]
+    if lancamento.destroy
+      render :text => true
+    else
+      render :text => false
+    end
+  end
+
   def confirmado
     lancamento = Lancamento.find(params[:id])
     if lancamento.confirmado

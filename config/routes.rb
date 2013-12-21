@@ -17,6 +17,8 @@ Movimentobancario::Application.routes.draw do
   match "/lancamento/confirmado" => "lancamentos#confirmado"
   #filtro para listagem de lançamentos
   match "/lancamento/filtro" => "lancamentos#filtro"
+  #apagar lançamento
+  match "/lancamento/apagar_lancamento" => "lancamentos#apagar_lancamento"
 
   get "dashboard/index"
 

@@ -26,7 +26,7 @@
             <td></td>
         </tr>
         <% @lancamentos.each do |lancamento| %>
-          <tr>
+          <tr id="linha_<%= lancamento.id %>">
             <td><%= check_box_tag "confirmado_#{lancamento.id}", lancamento.id, lancamento.confirmado ? true : false, {:onchange => "alterarCheck(this);"} %></td>
             <td><%= lancamento.data.strftime("%d/%m/%Y") %></td>
             <td><%= lancamento.referencia %></td>
@@ -36,7 +36,7 @@
             <td><%= lancamento.saldo.round(2)  %></td>
             <td>
                 <%= link_to 'Alterar', edit_lancamento_path(lancamento) %>
-                <%= link_to 'Excluir', lancamento, method: :delete, data: { confirm: 'Deseja realmente excluir?' } %>
+                <%= link_to 'Excluir', "#", :onclick => "apagarRegistro(#{lancamento.id})" %>
             </td>
           </tr>
         <% end %>
@@ -52,6 +52,20 @@
 
         oTable.fnSort( [ [1,'asc'] ] );
     });
+
+    var apagarRegistro = function(id){
+        var id = id;
+        $.get( '/lancamento/apagar_lancamento',
+            {id : id},
+            function(r){
+                if( r ){
+                    $('#linha_' + id).hide("slow");
+                }else{
+                    alert('Erro ao tentar excluir. Consulte analista!');
+                }
+            }
+        );
+    }
 
 
     var  alterarCheck = function(elemento){
