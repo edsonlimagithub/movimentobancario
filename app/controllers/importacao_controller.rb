@@ -108,7 +108,6 @@ class ImportacaoController < ApplicationController
 		elsif linha[6] == 'NEGADA'
 			return false
 		elsif linha[5].blank?
-			abort linha.inspect
 			return false
 		end
 		return true
