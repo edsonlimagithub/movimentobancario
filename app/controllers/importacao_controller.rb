@@ -107,6 +107,8 @@ class ImportacaoController < ApplicationController
 		#teste para coluna estado transação
 		elsif linha[6] == 'NEGADA'
 			return false
+		elsif linha[5].blank?
+			return false
 		end
 		return true
 	end
