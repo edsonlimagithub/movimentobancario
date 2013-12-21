@@ -4,7 +4,7 @@ class LancamentosController < ApplicationController
   def index
     dataInicial = DateTime.strptime(params[:dataInicial], "%d/%m/%Y").to_s(:db)
     dataFinal = DateTime.strptime(params[:dataFinal], "%d/%m/%Y").to_s(:db)
-    lancamentos = Lancamento.find(:all, :conditions => ["data < ?", dataInicial])
+    lancamentos = Lancamento.find(:all, :conditions => ["data < ? AND conta_id = ?", dataInicial, params[:contaId][0]])
     
     @saldo_inicial = 0
 
