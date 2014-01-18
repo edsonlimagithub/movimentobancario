@@ -31,8 +31,8 @@
             <td><%= lancamento.data.strftime("%d/%m/%Y") %></td>
             <td><%= lancamento.referencia %></td>
             <td><%= lancamento.evento.descricao %></td>
-            <td><%=  !lancamento.evento.debito ? lancamento.valor : "" %></td>
-            <td><%=  lancamento.evento.debito ? lancamento.valor : "" %></td>
+            <td><%=  !lancamento.evento.debito ? lancamento.valor.round(2) : "" %></td>
+            <td><%=  lancamento.evento.debito ? lancamento.valor.round(2) : "" %></td>
             <td><%= lancamento.saldo.round(2)  %></td>
             <td>
                 <%= link_to 'Alterar', edit_lancamento_path(lancamento) %>
