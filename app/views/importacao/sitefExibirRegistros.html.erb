@@ -5,6 +5,7 @@ Dia Correspondente:
     <thead>
       <tr>
         <th>Produto</th>
+        <th>Produto Status</th>
         <th>Valor</th>
         <th>Parcelas</th>
         <th>Pdv</th>
@@ -15,6 +16,7 @@ Dia Correspondente:
         <% @registrosArquivoSitef.each do |r| %>
           <tr>
             <td><%= r[:nome_produto] %></td>
+            <td><%= r[:situacao]%> </td>
             <td><%= r[:valor] %></td>
             <td><%= r[:num_par] %></td>
             <td><%= r[:indentifi_pdv]%></td>

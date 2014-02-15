@@ -11,6 +11,13 @@ class ImportacaoController < ApplicationController
 		@sitefFile = SitefFile.create(params[:sitef_file])
 		@sitefFile.save
 		@registrosArquivoSitef = registrosArquivoSitef
+		@registrosArquivoSitef.each_with_index do |r, index|
+			if Produto.find(:first, :conditions => ["descricao = ?", r[:nome_produto]])
+				@registrosArquivoSitef[index][:situacao] = 'OK'
+			else
+				@registrosArquivoSitef[index][:situacao] = 'Não cadastrado'
+			end
+		end
 	end
 
 	#processa arquivo sitef, salvando registro sitef e efetuando os lançamentos
@@ -112,4 +119,5 @@ class ImportacaoController < ApplicationController
 		end
 		return true
 	end
+
 end

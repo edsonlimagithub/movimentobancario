@@ -4,6 +4,10 @@
 		"selected_items":
 		[
 			[
+				"registro",
+				"registrosArquivoSitef"
+			],
+			[
 				"apagar",
 				"apagar_lacamento"
 			],
@@ -42,10 +46,6 @@
 			[
 				"nsu",
 				"nsu_sitef"
-			],
-			[
-				"registro",
-				"registroArquivoSitef"
 			],
 			[
 				"sitef",
@@ -242,6 +242,38 @@
 				"buffer_size": 952,
 				"line_ending": "Unix"
 			}
+		},
+		{
+			"file": "app/views/importacao/sitef.html.erb",
+			"settings":
+			{
+				"buffer_size": 537,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/controllers/importacao_controller.rb",
+			"settings":
+			{
+				"buffer_size": 3626,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/models/produto.rb",
+			"settings":
+			{
+				"buffer_size": 402,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/views/importacao/sitefExibirRegistros.html.erb",
+			"settings":
+			{
+				"buffer_size": 972,
+				"line_ending": "Unix"
+			}
 		}
 	],
 	"build_system": "Packages/Ruby/Ruby.sublime-build",
@@ -320,6 +352,7 @@
 	},
 	"file_history":
 	[
+		"/home/edsonlima/projetos/movimentobancario/app/views/layouts/_importacao.html.erb",
 		"/home/edsonlima/projetos/movimentobancario/app/views/lancamentos/filtro.html.erb",
 		"/home/edsonlima/projetos/movimentobancario/app/controllers/importacao_controller.rb",
 		"/home/edsonlima/projetos/movimentobancario/app/views/layouts/_lancamentos.html.erb",
@@ -383,7 +416,6 @@
 		"/home/edsonlima/projetos/movimentobancario/app/assets/javascripts/jquery-ui-1.10.3.custom.min.js",
 		"/home/edsonlima/projetos/movimentobancario/db/migrate/20130727184127_add_coluns_to_registro_sitef.rb",
 		"/home/edsonlima/projetos/movimentobancario/app/controllers/contas_controller.rb",
-		"/home/edsonlima/projetos/movimentobancario/app/views/layouts/_importacao.html.erb",
 		"/home/edsonlima/projetos/movimentobancario/db/migrate/20130715224800_add_attachment_arquivo_to_sitef_files.rb",
 		"/home/edsonlima/projetos/movimentobancario/config/initializers/inflections.rb",
 		"/home/edsonlima/projetos/movimentobancario/doc/README_FOR_APP",
@@ -530,7 +562,7 @@
 	"groups":
 	[
 		{
-			"selected": 2,
+			"selected": 7,
 			"sheets":
 			[
 				{
@@ -573,8 +605,8 @@
 						"selection":
 						[
 							[
-								3028,
-								3028
+								3059,
+								3059
 							]
 						],
 						"settings":
@@ -629,14 +661,123 @@
 						"selection":
 						[
 							[
-								7,
-								7
+								111,
+								111
 							]
 						],
 						"settings":
 						{
 							"syntax": "Packages/Ruby/Ruby.tmLanguage",
 							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "app/views/importacao/sitef.html.erb",
+					"settings":
+					{
+						"buffer_size": 537,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								520,
+								520
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Rails/HTML (Rails).tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "app/controllers/importacao_controller.rb",
+					"settings":
+					{
+						"buffer_size": 3626,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								559,
+								559
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Ruby/Ruby.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"file": "app/models/produto.rb",
+					"settings":
+					{
+						"buffer_size": 402,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								397,
+								397
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Ruby/Ruby.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 7,
+					"file": "app/views/importacao/sitefExibirRegistros.html.erb",
+					"settings":
+					{
+						"buffer_size": 972,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								659,
+								659
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Rails/HTML (Rails).tmLanguage",
+							"tab_size": 4,
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
@@ -693,6 +834,26 @@
 		"height": 0.0,
 		"selected_items":
 		[
+			[
+				"sitefexi",
+				"app/views/importacao/sitefExibirRegistros.html.erb"
+			],
+			[
+				"produto",
+				"app/models/produto.rb"
+			],
+			[
+				"impor",
+				"app/controllers/importacao_controller.rb"
+			],
+			[
+				"sitef",
+				"app/views/importacao/sitef.html.erb"
+			],
+			[
+				"importac",
+				"app/views/layouts/_importacao.html.erb"
+			],
 			[
 				"routes",
 				"config/routes.rb"
@@ -770,10 +931,6 @@
 				"app/controllers/importacao_controller.rb"
 			],
 			[
-				"sitef",
-				"app/views/importacao/sitef.html.erb"
-			],
-			[
 				"lanc",
 				"app/controllers/lancamentos_controller.rb"
 			],
@@ -784,10 +941,6 @@
 			[
 				"aplica",
 				"app/views/layouts/application.html.erb"
-			],
-			[
-				"impor",
-				"app/controllers/importacao_controller.rb"
 			],
 			[
 				"lancamento/_form",
@@ -814,10 +967,6 @@
 				"app/views/lancamentos/index.html.erb"
 			],
 			[
-				"sitefexi",
-				"app/views/importacao/sitefExibirRegistros.html.erb"
-			],
-			[
 				"lancamentos/_fo",
 				"app/views/lancamentos/_form.html.erb"
 			],
@@ -840,10 +989,6 @@
 			[
 				"produtos/s",
 				"app/views/produtos/show.html.erb"
-			],
-			[
-				"produto",
-				"app/models/produto.rb"
 			],
 			[
 				"produtos/",
@@ -1200,10 +1345,6 @@
 			[
 				"questa",
 				"app/models/questao.rb"
-			],
-			[
-				"questionar",
-				"app/controllers/questionarios_controller.rb"
 			]
 		],
 		"width": 0.0
