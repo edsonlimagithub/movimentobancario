@@ -65,6 +65,8 @@ class ImportacaoController < ApplicationController
 		case prazo_funcao
 		when "dias30"
 			data_retorno = data_correspondente + 30.day
+		when "dias01"
+			data_retorno = data_correspondente + 1.day
 		else
 			return false
 		end
