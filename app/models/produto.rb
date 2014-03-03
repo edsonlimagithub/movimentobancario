@@ -1,5 +1,8 @@
 class Produto < ActiveRecord::Base
   attr_accessible :descricao, :descricao_sitef, :prazo_id, :conta_id, :evento_id
+  validates :descricao, uniqueness: true
+  validates :descricao_sitef, uniqueness: true
+  
   belongs_to :prazo
   belongs_to :conta
   belongs_to :evento 
