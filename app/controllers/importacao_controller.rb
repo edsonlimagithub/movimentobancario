@@ -9,6 +9,7 @@ class ImportacaoController < ApplicationController
 
 	def sitefExibirRegistros
 		@sitefFile = SitefFile.create(params[:sitef_file])
+		#@siteFile.umask(777)
 		@sitefFile.save
 		@registrosArquivoSitef = registrosArquivoSitef
 		@registrosArquivoSitef.each_with_index do |r, index|
