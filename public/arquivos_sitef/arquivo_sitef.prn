@@ -1,164 +1,47 @@
-Relatorios de Transações do SiTef  - Versao 0.0.43.13 - pagina [1]
-Loja [] - Data da impressao 04/08/2013 - 09:53:35 - Data do movimento 02/08/2013
-Todas as transacoes
-________________________________________________________________________________
- Nome            NSU   Codigo     Idendifi  Estado                Valor  Num    
- produto        SiTef  transacao       PDV  transacao                    par    
-________________________________________________________________________________
- Sysdata       020001  CMPCTCRM   TM000005  EFETUADA              49,25   01    
- REDECARD      020002  ABERTERM   TM000003  EFETUADA                            
- MAESTRO       020003  CMPCTDEC   TM000003  NEGADA                96,33         
- MAESTRO       020004  CMPCTDEC   TM000003  NEGADA                96,33         
- SODEXO        020005  CMPCTDEB   TM000005  EFETUADA               3,08         
- VISA ELECT    020006  CMPCTDEB   TM000002  EFETUADA              23,44         
- MASTERCARD    020007  CMPCTCRC   TM000003  EFETUADA              47,73   01    
- Libercard     020008  ABERTERM   TM000002  EFETUADA                            
- Libercard     020009  CMPCTDEB   TM000002  EFETUADA              65,00   01    
- MASTERCARD    020010  CMPCTCRC   TM000002  EFETUADA              43,91   01    
- ALIMENTACA    020011  CMPCTDEC   TM000003  EFETUADA               7,04         
- SODEXO        020012  CMPCTDEB   TM000002  EFETUADA              22,97         
- Libercard     020013  CMPCTDEB   TM000003  EFETUADA              62,61   01    
- VISA ELECT    020014  CMPCTDEB   TM000005  EFETUADA              20,00         
- MAESTRO       020015  CMPCTDEC   TM000005  EFETUADA               7,37         
- VISA ELECT    020016  CMPCTDEC   TM000002  EFETUADA              66,61         
- ALIMENTACA    020017  CMPCTDEB   TM000004  EFETUADA              37,78         
- Libercard     020018  CMPCTDEB   TM000004  EFETUADA               5,59   01    
- TICKET        020019  CMPCTDEB   TM000004  NEGADA                17,03         
- TICKET        020020  CMPCTDEB   TM000004  EFETUADA              17,03         
- Sysdata       020021  ABERTERM   TM000002  EFETUADA                            
- Sysdata       020022  CMPCTCRM   TM000002  EFETUADA              64,64   01    
- Libercard     020023  CMPCTDEB   TM000001  EFETUADA              37,91   01    
- Sysdata       020024  CMPCTCRM   TM000002  EFETUADA              25,41   01    
- HIPERCARD     020025  CMPCTCRC   TM000001  EFETUADA              19,28   01    
- Sysdata       020026  CMPCTCRN   TM000004  EFETUADA              37,13   01    
- TICKET        020027  CMPCTDEB   TM000003  EFETUADA              28,61         
- SODEXO        020028  CMPCTDEB   TM000003  EFETUADA              39,03         
- MASTERCARD    020029  CMPCTCRM   TM000005  EFETUADA              21,58   01    
- TICKET        020030  CMPCTDEB   TM000001  EFETUADA              16,42         
- BNBCLUBE      020031  CMPCTDEB   TM000003  EFETUADA              81,57         
- VISA CREDI    020032  CMPCTCRC   TM000004  EFETUADA              50,45         
- ALIMENTACA    020033  CMPCTDEC   TM000005  EFETUADA              45,12         
- MAESTRO       020034  CMPCTDEB   TM000003  EFETUADA              24,42         
- SODEXO        020035  CMPCTDEB   TM000003  EFETUADA              95,90         
- Libercard     020036  CMPCTDEB   TM000001  EFETUADA              39,86   01    
- Libercard     020037  CMPCTDEB   TM000003  EFETUADA              19,16   01    
- ELO DEBITO    020038  CMPCTDEC   TM000004  EFETUADA             100,25         
- VISA ELECT    020039  CMPCTDEC   TM000005  EFETUADA              10,44         
- Libercard     020040  CMPCTDEB   TM000004  NEGADA                19,40   01    
- Libercard     020041  CMPCTDEB   TM000004  EFETUADA              19,40   01    
- TICKET        020042  CMPCTDEB   TM000002  EFETUADA              58,82         
- TICKET        020043  CMPCTDEB   TM000001  EFETUADA              28,79         
- MASTERCARD    020044  CMPCTCRC   TM000002  EFETUADA              12,86   01    
-Relatorios de Transações do SiTef  - Versao 0.0.43.13 - pagina [2]
-Loja [] - Data da impressao 04/08/2013 - 09:53:35 - Data do movimento 02/08/2013
-Todas as transacoes
-________________________________________________________________________________
- Nome            NSU   Codigo     Idendifi  Estado                Valor  Num    
- produto        SiTef  transacao       PDV  transacao                    par    
-________________________________________________________________________________
- Libercard     020045  CMPCTDEB   TM000001  NEGADA                23,75   01    
- MASTERCARD    020046  CMPCTCRC   TM000004  EFETUADA              62,42   01    
- ELO CREDIT    020047  CMPCTCRC   TM000004  EFETUADA               2,54         
- VISA CREDI    020048  CMPCTCRC   TM000002  EFETUADA              27,69         
- SODEXO        020049  CMPCTDEB   TM000004  EFETUADA              15,94         
- SODEXO        020050  CMPCTDEB   TM000005  EFETUADA               7,00         
- MAESTRO       020051  CMPCTDEC   TM000001  EFETUADA              24,80         
- SODEXO        020052  CMPCTDEB   TM000004  EFETUADA              23,96         
- Sysdata       020053  CMPCTCRN   TM000005  EFETUADA              39,11   01    
- HIPERCARD     020054  CMPCTCRC   TM000002  EFETUADA              16,87   01    
- MAESTRO       020055  CMPCTDEB   TM000005  EFETUADA               6,84         
- SODEXO        020056  CMPCTDEB   TM000004  EFETUADA              14,90         
- Sysdata       020057  CMPCTCRM   TM000002  EFETUADA              87,95   01    
- MASTERCARD    020058  CMPCTCRC   TM000004  EFETUADA              23,14   01    
- ALIMENTACA    020059  CMPCTDEC   TM000003  EFETUADA              16,61         
- MAESTRO       020060  CMPCTDEB   TM000002  EFETUADA               7,10         
- Libercard     020061  CMPCTDEB   TM000004  EFETUADA              16,00   01    
- Libercard     020062  CMPCTDEB   TM000004  CANC.TIM             239,83   01    
- TICKET        020063  CMPCTDEB   TM000006  CANC.TIM              36,93         
- Libercard     020065  ABERTERM   GERPDV01  EFETUADA                            
- Sysdata       020066  ABERTERM   GERPDV01  EFETUADA                            
- REDECARD      020067  ABERTERM   GERPDV01  EFETUADA                            
- SODEXO        020068  CMPCTDEB   TM000003  EFETUADA              29,33         
- VISA ELECT    020069  CMPCTDEC   TM000003  EFETUADA               6,00         
- VISA CREDI    020070  CMPCTCRC   TM000004  EFETUADA              11,33         
- Sysdata       020071  CMPCTCRM   TM000002  NEGADA               269,17   01    
- TICKET        020072  CMPCTDEB   TM000006  EFETUADA              21,55         
- TICKET        020073  CMPCTDEB   TM000006  NEGADA                 6,73         
- TICKET        020074  CMPCTDEB   TM000006  EFETUADA               6,73         
- TICKET        020075  CMPCTDEB   TM000006  EFETUADA              12,98         
- MAESTRO       020076  CMPCTDEC   TM000004  EFETUADA               8,94         
- TICKET        020077  CMPCTDEB   TM000006  NEGADA                10,99         
- TICKET        020078  CMPCTDEB   TM000006  EFETUADA              10,99         
- VISA ELECT    020079  CMPCTDEC   TM000004  EFETUADA               3,99         
- VISA ELECT    020080  CMPCTDEC   TM000004  EFETUADA              13,00         
- GREENCARD     020081  CMPCTDEB   TM000004  EFETUADA              26,60         
- GREENCARD     020082  CMPCTDEB   TM000002  EFETUADA              10,29         
- MASTERCARD    020083  CMPCTCRC   TM000004  EFETUADA             157,48   02    
- MAESTRO       020084  CMPCTDEB   TM000006  EFETUADA              23,06         
- SODEXO        020085  CMPCTDEB   TM000002  EFETUADA               5,00         
- SODEXO        020086  CMPCTDEB   TM000002  EFETUADA              13,00         
- SODEXO        020087  CMPCTDEB   TM000004  EFETUADA             231,26         
- TICKET        020088  CMPCTDEB   TM000006  EFETUADA              25,20         
- MASTERCARD    020089  CMPCTCRC   TM000003  NEGADA                15,67   01    
-Relatorios de Transações do SiTef  - Versao 0.0.43.13 - pagina [3]
-Loja [] - Data da impressao 04/08/2013 - 09:53:35 - Data do movimento 02/08/2013
-Todas as transacoes
-________________________________________________________________________________
- Nome            NSU   Codigo     Idendifi  Estado                Valor  Num    
- produto        SiTef  transacao       PDV  transacao                    par    
-________________________________________________________________________________
- MAESTRO       020090  CMPCTDEC   TM000006  EFETUADA              12,60         
- TICKET        020091  CMPCTDEB   TM000003  EFETUADA              34,06         
- ALIMENTACA    020092  CMPCTDEB   TM000002  EFETUADA             117,25         
- ALIMENTACA    020093  CMPCTDEC   TM000004  NEGADA                84,94         
- ALIMENTACA    020094  CMPCTDEC   TM000004  EFETUADA              75,00         
- TICKET        020095  CMPCTDEB   TM000006  EFETUADA              10,31         
- ALIMENTACA    020096  CMPCTDEC   TM000003  NEGADA               123,01         
- TICKET        020097  CMPCTDEB   TM000001  EFETUADA               3,10         
- ALIMENTACA    020098  CMPCTDEC   TM000003  EFETUADA              79,49         
- Libercard     020099  CMPCTDEB   TM000004  EFETUADA              12,47   01    
- Sysdata       020100  CMPCTCRM   TM000006  EFETUADA              95,72   01    
- Sysdata       020101  CMPCTCRM   TM000004  EFETUADA             100,06   01    
- SODEXO        020102  CMPCTDEB   TM000002  EFETUADA              87,08         
- SODEXO        020103  CMPCTDEB   TM000002  EFETUADA              15,00         
- ALIMENTACA    020104  CMPCTDEC   TM000003  EFETUADA             139,00         
- MASTERCARD    020105  CMPCTCRC   TM000006  EFETUADA              34,00   01    
- Sysdata       020106  CMPCTCRN   TM000005  NEGADA                43,99   02    
- Sysdata       020107  CMPCTCRM   TM000005  EFETUADA              43,99   02    
- SODEXO        020108  CMPCTDEB   TM000004  EFETUADA              11,96         
- ALIMENTACA    020109  CMPCTDEC   TM000001  EFETUADA               9,99         
- MASTERCARD    020110  CMPCTCRC   TM000004  EFETUADA              31,55   01    
- ALIMENTACA    020111  CMPCTDEB   TM000003  EFETUADA              76,06         
- ALIMENTACA    020112  CMPCTDEC   TM000001  EFETUADA               4,88         
- HIPERCARD     020113  CMPCTCRC   TM000004  EFETUADA              60,34   01    
- SODEXO        020114  CMPCTDEB   TM000001  EFETUADA              32,27         
- TICKET        020115  CMPCTDEB   TM000003  EFETUADA              41,71         
- HIPERCARD     020116  CMPCTCRC   TM000006  EFETUADA             104,68   01    
- ALIMENTACA    020117  CMPCTDEB   TM000002  NEGADA                74,80         
- ALIMENTACA    020118  CMPCTDEB   TM000002  EFETUADA              74,80         
- ALIMENTACA    020119  CMPCTDEB   TM000006  EFETUADA              18,25         
- VISA CREDI    020120  CMPCTCRC   TM000003  EFETUADA             130,15         
- SODEXO        020121  CMPCTDEB   TM000004  EFETUADA             113,84         
- ALIMENTACA    020122  CMPCTDEC   TM000006  EFETUADA              19,65         
- SODEXO        020123  CMPCTDEB   TM000001  EFETUADA             163,21         
- Sysdata       020124  CMPCTCRM   TM000001  EFETUADA              10,78   01    
-________________________________________________________________________________
-                 Quantidades            Valores                        Quantidad
-Relatorios de Transações do SiTef  - Versao 0.0.43.13 - pagina [4]
-Loja [] - Data da impressao 04/08/2013 - 09:53:35 - Data do movimento 02/08/2013
-Todas as transacoes
-________________________________________________________________________________
- Nome            NSU   Codigo     Idendifi  Estado                Valor  Num    
- produto        SiTef  transacao       PDV  transacao                    par    
-________________________________________________________________________________
-  Todas         [       123]                           Pagamentos     [         
-  Débito        [        74]      [        2.717,27]   Canc.Pagamentos[         
-  Crédito       [        28]      [        1.412,04]   Cancelamentos  [         
-  Pendentes     [         0]      [            0,00]   Negadas        [        1
-  Garantias     [         0]      [            0,00]   Nao validadas  [         
-  Consulta Cheq.[         0]      [            0,00]   Pré-Autorização[         
-  Consulta AVS  [         0]                           Estorno Pré-Aut[         
-  Crédito Parc. [         2]      [          201,47]   Débito Parc.   [         
-  Vlr Saque     [         0]      [            0,00]   Canc Vlr Saque [         
-  Compra Virtual[         0]      [            0,00]   Canc Virtual   [         
-  VENDAS VALIDAS[       102]      [        4.129,31]                            
+‹Relatório de Transações Softway                                                                                                          
+‹Todas as Transações                                                                                                                      
+‹Loja [] - Data da impressão 15/03/2014 Data do Movimento 15/03                                                                           
+‹+---------------------------------------------------------------------------------------------------------------------------------------+
+‹|Código |  Hora   | NSU   |  NSU     |Transação|Número  | Estado |Cod |          Identificação        |          Valor      | Num. Parc.|
+‹|Empresa|         | Sitef |  Rede    |         |Terminal|  TRN   |Resp|            do Cartão          |                     |           |
+‹+---------------------------------------------------------------------------------------------------------------------------------------+
+ƒ00000000 08:03:46  150001              ABERTERM  TM000002 EFETUADA                                                               
+„00000000 08:03:51  150002  005441101   PAGAMENT  TM000002 EFETUADA              636375******4119                30,00            0
+„00000000 08:38:06  150003  005671901   PAGAMENT  TM000002 EFETUADA              636375******6116               150,00            0
+„00000000 09:21:11  150004  006121101   CMPVISJU  TM000002 EFETUADA              636375******0114                30,77            1
+„00000000 09:24:41  150005  006164801   CMPVISJU  TM000005 EFETUADA              918478******0466                39,17            1
+„00000000 09:26:18  150006  006183801   CMPVISJU  TM000002 EFETUADA              918478******0351                16,61            1
+„00000000 09:37:13  150007  006325701   PAGAMENT  TM000006 EFETUADA           918478*********0000               288,35            0
+„00000000 09:44:07  150008  006420801   CMPVISJU  TM000001 EFETUADA              918478******0338                16,39            1
+„00000000 09:50:57  150009  006516101   PAGAMENT  TM000001 EFETUADA              636375******5117                89,32            0
+„00000000 09:54:07  150010  006557401   CMPVISJU  TM000005 EFETUADA              918478******0218                18,45            1
+„00000000 09:55:15  150011  006572901   PAGAMENT  TM000004 EFETUADA              918478******0355               605,27            0
+„00000000 09:56:52  150012  006590801   PAGAMENT  TM000005 EFETUADA              918478******0358               334,64            0
+„00000000 10:01:43  150013  006656601   CMPVISJU  TM000001 EFETUADA           918478*********7000                29,67            1
+„00000000 10:02:34  150014  006668901   CMPVSJDG  TM000004 EFETUADA              636375******4116                70,21            1
+„00000000 10:03:59  150015  006691001   CMPVSJDG  TM000004 EFETUADA              636375******4116                12,19            1
+„00000000 10:06:26  150016  006724902   PARSEMJU  TM000002 EFETUADA              636375******5115               506,89            2
+„00000000 10:25:28  150017  000434372   PARSJUDG  TM000002 NEGADA    14          636375******5112               201,55            2
+„00000000 10:26:19  150018  000435015   PARSJUDG  TM000002 NEGADA    14          636375******5112               201,55            2
+„00000000 10:40:26  150019  007224901   PAGAMENT  TM000006 EFETUADA              636375******8116               204,99            0
+„00000000 10:42:04  150020  007248802   PARSEMJU  TM000004 EFETUADA              636375******5117                85,18            2
+„00000000 11:07:12  150021  007613001   PAGAMDIG  TM000006 EFETUADA              636375******0113               201,70            0
+„00000000 11:15:18  150022  007736301   CMPVISJU  TM000001 EFETUADA              918478******0355               336,63            1
+„00000000 11:16:57  150023  007758701   CMPVISJU  TM000001 EFETUADA              918478******0355                15,00            1
+„00000000 11:40:02  150024  008079702   PARSEMJU  TM000004 EFETUADA              918478******0358               318,34            2
+„00000000 11:45:19  150025  008146801   PAGAMENT  TM000002 EFETUADA              918478******0552                43,46            0
+„00000000 11:46:35  150026  008161801   PAGAMENT  TM000004 EFETUADA              918478******0337               288,33            0
+„00000000 11:56:27  150027  008286301   CMPVISJU  TM000005 EFETUADA              636375******8116                12,88            1
+„00000000 12:11:13  150028  008457101   CMPVISJU  TM000004 EFETUADA              918478******0552                39,86            1
+„00000000 12:22:01  150029  008578001   CMPVISJU  TM000005 EFETUADA              918478******0243                48,51            1
+„00000000 12:22:20  150030  008581602   PARSEMJU  TM000004 EFETUADA              918478******0337                62,83            2
+„00000000 12:34:35  150031  008706801   CMPVISJU  TM000004 EFETUADA              636375******5120               219,48            1
+„00000000 14:26:03  150032  009599802   PARSEMJU  TM000006 EFETUADA              918478******0513                71,89            2
+„00000000 15:39:19  150033  000222601   CMPVISJU  TM000003 EFETUADA              918478******0588                 5,58            1
+„00000000 15:53:57  150034  000359201   PAGAMENT  TM000006 EFETUADA              518277******6110                53,95            0
+‹+---------------------------------------------------------------------------------------------------------------------------------------+
+h                 Quantidades            Valores                        Quantidades            Valores 
+l  Todas         [        34]                           Cancelamentos  [         0]      [            0,00]
+l  Compras       [        22]      [        2.359,63]   Negadas        [         2]      [          403,10]
+l  Pendentes     [         0]      [            0,00]   Não validadas  [         0]      [            0,00]
+l                                                       Vendas válidas [        20]      [        1.956,53]

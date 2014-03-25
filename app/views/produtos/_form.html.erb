@@ -31,6 +31,11 @@
     <%= f.label :prazo_id %><br />
     <%= f.select :prazo_id, Prazo.all.collect{|p| [p.descricao, p.id]} %>
   </div>
+  <div class="field">
+    <%= f.label :taxa %><br />
+    <%= f.text_field :taxa %>
+  </div>
+  </br>
   <div class="actions">
     <%= f.submit %>
   </div>

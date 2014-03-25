@@ -1,0 +1,39 @@
+<h1>Registros do arquivo sitef</h1>
+Dia Correspondente:
+<%= @sitefFile.dia_correspondente.strftime("%d/%m/%Y") %>
+<table id="tabela">
+    <thead>
+      <tr>
+        <th>Produto</th>
+        <th>Produto Status</th>
+        <th>Valor</th>
+        <th>Parcelas</th>
+        <th>Pdv</th>
+        <th>Nsu Host</th>
+      </tr>
+    </thead>
+    <tbody>
+        <% @registrosArquivoSitef.each do |r| %>
+          <tr>
+            <td><%= r[:nome_produto] %></td>
+            <td><%= r[:situacao]%> </td>
+            <td><%= r[:valor] %></td>
+            <td><%= r[:num_par] %></td>
+            <td><%= r[:indentifi_pdv]%></td>
+            <td><%= r[:nsu_sitef] %></td>
+          </tr>
+        <% end %>
+    </tbody>
+</table>
+
+<br />
+<br />
+
+<%= link_to 'Confirmar', '/importacao/processaRegistrosSitef?data=' + @sitefFile.dia_correspondente.to_s %>
+
+<script type="text/javascript">
+    $(document).ready(function(){
+        $("#tabela").dataTable({});    
+    });
+    
+</script>

@@ -4,6 +4,7 @@
 <table>
   <tr>
     <th>Descricao</th>
+    <th>Taxa</th>
     <th>Descricao sitef</th>
     <th>Prazo</th>
     <th></th>
@@ -12,6 +13,7 @@
 <% @produtos.each do |produto| %>
   <tr>
     <td><%= produto.descricao %></td>
+    <td><%= produto.taxa %></td>
     <td><%= produto.descricao_sitef %></td>
     <td><%= produto.prazo.descricao %></td>
     <td>

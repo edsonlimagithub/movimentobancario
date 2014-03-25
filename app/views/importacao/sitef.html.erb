@@ -1,6 +1,7 @@
 <div>Layout arquivo sitef: nome produto, NSU Sitef, Codigo transacao, Identifi PDV, Estado transacao, Valor, Num par, </div>
 
 <%= form_for @sitefFile, :url => '/importacao/sitefExibirRegistros', :html => { :multipart => true } do |f| %>
+	<input type="hidden" value="<%= @tipo %>" name="tipo" id="tipo">
 	<p>
 		<%= f.label :dia_correspondente %>
 		<%= f.text_field :dia_correspondente, :size => 11 %>

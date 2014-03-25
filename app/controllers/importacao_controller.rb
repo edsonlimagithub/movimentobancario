@@ -3,7 +3,9 @@ require 'convert_value'
 
 class ImportacaoController < ApplicationController
 	
+	#importar arquivo sitef
 	def sitef
+		@tipo = params[:tipo]
 		@sitefFile = SitefFile.new
 	end
 
@@ -11,7 +13,12 @@ class ImportacaoController < ApplicationController
 		@sitefFile = SitefFile.create(params[:sitef_file])
 		#@siteFile.umask(777)
 		@sitefFile.save
-		@registrosArquivoSitef = registrosArquivoSitef
+		if params[:tipo] == "sitef"
+			@registrosArquivoSitef = registrosArquivoSitef
+		elsif params[:tipo] == "softway"
+			@registrosArquivoSitef = registrosArquivoSoftway
+		end
+
 		@registrosArquivoSitef.each_with_index do |r, index|
 			if Produto.find(:first, :conditions => ["descricao = ?", r[:nome_produto]])
 				@registrosArquivoSitef[index][:situacao] = 'OK'
@@ -29,6 +36,25 @@ class ImportacaoController < ApplicationController
 			end
 		end
 		redirect_to '/importacao/sitef'
+	end
+
+	#importar arquivo softway
+	def softway
+		@softwayfFile = SoftwayFiles.new
+	end
+
+	def softwayExibirRegistros
+		@softwayFile = SoftwayFiles.create(params[:softway_file])
+		#@siteFile.umask(777)
+		@softwayFiles.save
+		@registrosArquivoSoftway = registrosArquivoSoftway
+		@registrosArquivoSoftway.each_with_index do |r, index|
+			if Produto.find(:first, :conditions => ["descricao = ?", r[:nome_produto]])
+				@registrosArquivoSitef[index][:situacao] = 'OK'
+			else
+				@registrosArquivoSitef[index][:situacao] = 'Não cadastrado'
+			end
+		end
 	end
 
 	private
@@ -51,10 +77,13 @@ class ImportacaoController < ApplicationController
 		(1..registroArquivoSitef[:num_par].to_i).each do |registro| 
 			lancamento            = Lancamento.new
 			lancamento.data       = data
-			lancamento.valor      = valor / registroArquivoSitef[:num_par].to_i
-			lancamento.evento     = produto.evento
-			lancamento.conta      = produto.conta
-			lancamento.referencia = produto.descricao +  " : " + registroArquivoSitef[:nsu_sitef]
+			valor = valor / registroArquivoSitef[:num_par].to_i
+			valor_taxado = valor - (valor * produto.taxa) / 100  
+			lancamento.valor            = valor_taxado
+			lancamento.valor_lancamento = valor
+			lancamento.evento           = produto.evento
+			lancamento.conta            = produto.conta
+			lancamento.referencia       = produto.descricao +  " : " + registroArquivoSitef[:nsu_sitef]
 			lancamento.save
 			data = dataLancamento produto.prazo.funcao, data
 		end
@@ -86,8 +115,6 @@ class ImportacaoController < ApplicationController
 	end
 
 	def registrosArquivoSitef
-		valoresValidos = ["REDECARD", "MASTERCARD", "TICKET", "Sysdata", "ALIMENTACA", "SODEXO", "VISA CREDI",
-			"VISA ELECT", "Libercard", "BNBCLUBE", "MAESTRO", "ELO DEBITO", "ELO CREDIT", "GREENCARD", "HIPERCARD"]
 		valoresValidos = Produto.descricoesSitef
 		rs = File.open("public/arquivos_sitef/arquivo_sitef.prn")
 		linhas = Array.new
@@ -121,6 +148,50 @@ class ImportacaoController < ApplicationController
 			return false
 		end
 		return true
+	end
+
+	def validarLinhaArquivoSoftway linha, valoresValidos
+		
+		if linha.length < 8
+			return false
+		elsif !linha[0].include? "000000"
+			return false
+		#teste para coluna código transação
+		elsif linha[6] == 'ABERTERM'
+			return false
+		#teste para coluna estado transação
+		elsif linha[6] == 'NEGADA'
+			return false
+		end
+		return true
+	end
+
+	def registrosArquivoSoftway
+		valoresValidos = Produto.descricoesSitef
+		rs = File.open("public/arquivos_sitef/arquivo_sitef.prn")
+		linhas = Array.new
+		rs.each_line do |line|
+			colunas = line.force_encoding("iso-8859-1").split(" ")
+			if validarLinhaArquivoSoftway colunas, valoresValidos
+				coluna = Hash.new
+				puts colunas.inspect
+				coluna[:nome_produto]           = "Softway"
+				coluna[:nsu_sitef]              = colunas[2]
+				coluna[:codigo_transacao]       = colunas[4]
+				coluna[:indentifi_pdv]          = colunas[5]
+				coluna[:estado_trasacao]        = colunas[6]
+				if colunas.length == 10 
+					coluna[:valor]              = colunas[8]
+					coluna[:num_par]            = colunas[9]
+				elsif colunas.length == 9       
+					colunas[:valor]             = colunas[8]
+					coluna[:num_par]            = colunas[9]
+				end
+				linhas << coluna
+
+			end
+		end
+		return linhas
 	end
 
 end

@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20131130140116) do
+ActiveRecord::Schema.define(:version => 20140319200005) do
 
   create_table "contas", :force => true do |t|
     t.string   "descricao"
@@ -23,7 +23,7 @@ ActiveRecord::Schema.define(:version => 20131130140116) do
 
   create_table "eventos", :force => true do |t|
     t.string   "descricao"
-    t.boolean  "debido"
+    t.boolean  "debito"
     t.integer  "grupo_evento_id"
     t.datetime "created_at",      :null => false
     t.datetime "updated_at",      :null => false
@@ -40,10 +40,11 @@ ActiveRecord::Schema.define(:version => 20131130140116) do
     t.date     "data"
     t.integer  "evento_id"
     t.float    "valor"
-    t.datetime "created_at", :null => false
-    t.datetime "updated_at", :null => false
+    t.datetime "created_at",       :null => false
+    t.datetime "updated_at",       :null => false
     t.integer  "conta_id"
     t.string   "referencia"
+    t.float    "valor_lancamento"
   end
 
   create_table "prazos", :force => true do |t|
@@ -61,6 +62,7 @@ ActiveRecord::Schema.define(:version => 20131130140116) do
     t.datetime "updated_at",      :null => false
     t.integer  "evento_id"
     t.integer  "conta_id"
+    t.float    "taxa"
   end
 
   create_table "registro_sitefs", :force => true do |t|
@@ -83,6 +85,16 @@ ActiveRecord::Schema.define(:version => 20131130140116) do
   end
 
   create_table "sitef_files", :force => true do |t|
+    t.datetime "created_at",           :null => false
+    t.datetime "updated_at",           :null => false
+    t.string   "arquivo_file_name"
+    t.string   "arquivo_content_type"
+    t.integer  "arquivo_file_size"
+    t.datetime "arquivo_updated_at"
+    t.date     "dia_correspondente"
+  end
+
+  create_table "softway_files", :force => true do |t|
     t.datetime "created_at",           :null => false
     t.datetime "updated_at",           :null => false
     t.string   "arquivo_file_name"

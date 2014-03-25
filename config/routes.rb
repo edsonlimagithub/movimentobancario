@@ -29,6 +29,8 @@ Movimentobancario::Application.routes.draw do
   devise_for :user
   #espera arquivo sitef
   match "/importacao/sitef" => "importacao#sitef"
+  #espera arquivo softawy
+  match "/importacao/softway" => "importacao#softway"
   #exibe registro do arquivo sitef
   match "/importacao/sitefExibirRegistros" => "importacao#sitefExibirRegistros"
   #processa arquivo sitef: salva registro sitef e cria lançamentos
